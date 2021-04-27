@@ -1,0 +1,12 @@
+Package: causaldata
+Type: Package
+Title: Example Data Sets for Causal Inference Textbooks
+Version: 0.1.0
+Authors@R: c(person(given = "Nick", family = "Huntington-Klein", role = c("aut","cre"), email = "nhuntington-klein@seattleu.edu"))
+Description: This package contains example data sets to run the example problems from causal inference textbooks. Currently, it only contains data sets for The Effect by Nick Huntington-Klein.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.1.1
