@@ -9,4 +9,7 @@ d
 F causaldata.ado
 F causaldata.sthlp
 F black_politicians.dta
-
+F gapminder.dta
+F google_stock.dta
+F gov_transfers.dta
+F gov_transfers_density.dta
