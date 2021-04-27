@@ -1,0 +1,8 @@
+v 0.1
+d Materials by N. Huntington-Klein
+d nhuntington-klein@seattleu.edu
+d http://nickchk.com
+
+d 'causaldata': Get data for example code in causal inference textbooks
+
+p causaldata

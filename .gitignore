@@ -2,3 +2,4 @@ R/.Rbuildignore
 R/.Rhistory
 R/.Rproj.user/
 R/prepcode.R
+Stata/dataprep.do
