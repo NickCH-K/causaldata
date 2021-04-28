@@ -13,3 +13,8 @@ F gapminder.dta
 F google_stock.dta
 F gov_transfers.dta
 F gov_transfers_density.dta
+F mortgages.dta
+F Mroz.dta
+F organ_donations.dta
+F restaurant_inspections.dta
+F social_insure.dta
