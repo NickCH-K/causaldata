@@ -10,6 +10,6 @@ Run `causaldata` for a list of data sets included and to get information about t
 
 This package can be installed with:
 
-```r
+```stata
 net install causaldata, from("https://raw.githubusercontent.com/NickCH-K/causaldata/master/Stata/")
 ```

@@ -12,3 +12,9 @@ The R package can be installed with:
 # If necessary: install.packages('remotes')
 remotes::install_github('NickCH-K/causaldata/R/')
 ```
+
+The Stata package can be installed with:
+
+```stata
+net install causaldata, from("https://raw.githubusercontent.com/NickCH-K/causaldata/master/Stata/")
+```
