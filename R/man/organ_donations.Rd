@@ -11,6 +11,7 @@ A data frame with 162 rows and 3 variables
   \item{State}{The state, where California is the Treated group}
   \item{Quarter}{Quarter of observation, in "Q"QYYYY format}
   \item{Rate}{Organ donation rate}
+  \item{Quarter_Num}{Quarter of observation in numerical format. 1 = Quarter 4, 2010}
 }
 }
 \source{

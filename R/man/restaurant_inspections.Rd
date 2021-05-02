@@ -11,7 +11,6 @@ A data frame with 27178 rows and 5 variables
   \item{business_name}{Name of restaurant/chain}
   \item{inspection_score}{Health Inspection Score}
   \item{Year}{Year of inspection}
-  \item{Year}{Age in years}
   \item{NumberofLocations}{Number of locations in restaurant chain}
   \item{Weekend}{Was the inspection performed on a weekend?}
 }

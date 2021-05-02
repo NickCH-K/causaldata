@@ -6,7 +6,7 @@
 \alias{gov_transfers_density}
 \title{Data from "Government Transfers and Political Support" for Density Tests}
 \format{
-A data frame with 52549 rows and 1 variable1:
+A data frame with 52549 rows and 1 variable:
 \describe{
   \item{Income_Centered}{Income measure, centered around program cutoff (negative value = eligible)}
 }

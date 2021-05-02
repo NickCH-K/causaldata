@@ -12,7 +12,7 @@ Broockman, D.E., 2013. Black politicians are more intrinsically motivated to adv
 
 DESCRSHORT = """The black_politicians data contains data from Broockman (2013)."""
 
-DESCRLONG = """The black_politicians data contains data from Broockman (2013) on a field experiment where the author sent fictional emails purportedly sent by Black people to legislators in the United States. The experiment sought to determine whether the effect of the email being from "out-of-district" (someone who can't vote for you and so provides no extrinsic motivation to reply) would have a smaller effect on response rates for Black legislators than for non-Black ones, providing evidence of additional intrinsic motivation on the part of Black legislators to help Black people."""
+DESCRLONG = """The black_politicians data contains data from Broockman (2013) on a field experiment where the author sent fictional emails purportedly sent by Black people to legislators in the United States. The experiment sought to determine whether the effect of the email being from "out-of-district" (someone who can't vote for you and so provides no extrinsic motivation to reply) would have a smaller effect on response rates for Black legislators than for non-Black ones, providing evidence of additional intrinsic motivation on the part of Black legislators to help Black people. This data was used in the Matching chapter of The Effect."""
 
 NOTE = """::
     Number of observations - 5593
@@ -43,7 +43,7 @@ def load_pandas():
         See DATASET_PROPOSAL.txt for more information.
     """
     data = _get_data()
-    return du.process_pandas(data, endog_idx=5, exog_idx=[10, 2, 6, 7, 8])
+    return du.process_pandas(data, endog_idx=0)
 
 
 def load(as_pandas=None):
@@ -64,4 +64,4 @@ def load(as_pandas=None):
 def _get_data():
     data = du.load_csv(__file__, 'black_politicians.csv', sep=',')
     data = du.strip_column_names(data)
-    return data.astype(float)
+    return data

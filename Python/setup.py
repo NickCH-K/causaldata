@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.2' 
+VERSION = '0.0.3' 
 DESCRIPTION = 'Example Data Sets for Causal Inference'
 LONG_DESCRIPTION = 'Example data sets for running code examples from causal inference textbooks. For now this includes only data sets from The Effect by Huntington-Klein'
 
@@ -13,7 +13,7 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(include = ['causaldata',
-        'causaldata.black_politicians']),
+        'causaldata.*']),
         include_package_data = True,
         license="MIT license",
         install_requires=['statsmodels'],

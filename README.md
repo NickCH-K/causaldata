@@ -18,3 +18,15 @@ The Stata package can be installed with:
 ```stata
 net install causaldata, from("https://raw.githubusercontent.com/NickCH-K/causaldata/master/Stata/")
 ```
+
+To install the Python package, use the green Code button on this page to [download this repository](https://github.com/NickCH-K/causaldata/archive/refs/heads/main.zip), unzip it, change the directory to the `causaldata/Python` folder, and install with:
+
+```python
+python setup.py install
+```
+
+Or, if you're using something with IPython like Spyder, you might use
+
+```python
+runfile('the/full/path/to/causaldata/Python/setup.py', wdir='your/working/directory',args='install')
+```

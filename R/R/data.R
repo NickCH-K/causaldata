@@ -36,7 +36,6 @@
 #'   \item{business_name}{Name of restaurant/chain}
 #'   \item{inspection_score}{Health Inspection Score}
 #'   \item{Year}{Year of inspection}
-#'   \item{Year}{Age in years}
 #'   \item{NumberofLocations}{Number of locations in restaurant chain}
 #'   \item{Weekend}{Was the inspection performed on a weekend?}
 #' }
@@ -96,6 +95,7 @@
 #'   \item{State}{The state, where California is the Treated group}
 #'   \item{Quarter}{Quarter of observation, in "Q"QYYYY format}
 #'   \item{Rate}{Organ donation rate}
+#'   \item{Quarter_Num}{Quarter of observation in numerical format. 1 = Quarter 4, 2010}
 #' }
 #' @encoding UTF-8
 #' @source Kessler, J.B. and Roth, A.E., 2014. Don't take 'no' for an answer: An experiment with actual organ donor registrations. National Bureau of Economic Research working paper No. 20378. \url{https://www.nber.org/papers/w20378}
@@ -158,7 +158,7 @@
 #'
 #' This data is used in the \emph{Regression Discontinuity} chapter of \emph{The Effect}.
 #'
-#' @format A data frame with 52549 rows and 1 variable1:
+#' @format A data frame with 52549 rows and 1 variable:
 #' \describe{
 #'   \item{Income_Centered}{Income measure, centered around program cutoff (negative value = eligible)}
 #' }
