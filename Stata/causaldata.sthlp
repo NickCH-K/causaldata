@@ -32,7 +32,7 @@
 {cmd:causaldata} provides information about the data sets you have downloaded with the {cmd:causaldata} package.
 
 {pstd}
-Currently, the list of data sets includes the data necessary to run example code in {it: The Effect} by Huntington-Klein.
+Currently, the list of data sets includes the data necessary to run example code in {it: The Effect} by Huntington-Klein and {it: Causal Inference: The Mixtape} by Scott Cunningham.
  
 {marker author}{...}
 {title:Author}

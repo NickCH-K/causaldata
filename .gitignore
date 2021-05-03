@@ -4,3 +4,7 @@ R/.Rproj.user/
 R/prepcode.R
 Stata/dataprep.do
 .Rproj.user
+Python/build/
+Python/causaldata.egg-info/
+Python/dist/
+*__pycache__*

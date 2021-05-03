@@ -215,3 +215,57 @@
 #' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
 "black_politicians"
 
+#' Data from "Black Politicians are More Intrinsically Motivated to Advance Blacks' Interests"
+#'
+#' The \code{black_politicians} data contains data from Broockman (2013) on a field experiment where the author sent fictional emails purportedly sent by Black people to legislators in the United States. The experiment sought to determine whether the effect of the email being from "out-of-district" (someone who can't vote for you and so provides no extrinsic motivation to reply) would have a smaller effect on response rates for Black legislators than for non-Black ones, providing evidence of additional intrinsic motivation on the part of Black legislators to help Black people.
+#'
+#' This data is used in the \emph{Matching} chapter of \emph{The Effect}.
+#'
+#' @format A data frame with 5593 rows and 14 variables
+#' \describe{
+#'   \item{leg_black}{Legislator receiving email is Black}
+#'   \item{treat_out}{Email is from out-of-district}
+#'   \item{responded}{Legislator responded to email}
+#'   \item{totalpop}{District population}
+#'   \item{medianhhincom}{District median household income}
+#'   \item{black_medianhh}{District median household income among Black people}
+#'   \item{white_medianhh}{District median household income among White people}
+#'   \item{blackpercent}{Percentage of district that is Black}
+#'   \item{statessquireindex}{State's Squire index}
+#'   \item{nonblacknonwhite}{Legislator receiving email is neither Black nor White}
+#'   \item{urbanpercent}{Percentage of district that is urban}
+#'   \item{leg_senator}{Legislator receiving email is a senator}
+#'   \item{leg_democrat}{Legislator receiving email is in the Democratic party}
+#'   \item{south}{Legislator receiving email is in the Southern United States}
+#' }
+#' @encoding UTF-8
+#' @source Broockman, D.E., 2013. Black politicians are more intrinsically motivated to advance blacks’ interests: A field experiment manipulating political incentives. \emph{American Journal of Political Science}, 57(3), pp.521-536.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+"black_politicians"
+
+
+#' Automobile data from Stata
+#'
+#' This data, which comes standard in Stata, originally came from the April 1979 issue of Consumer Reports and from the United States Government EPA statistics on fuel consumption; they were compiled and published by Chambers et al. (1983).
+#'
+#' This data is used in the \emph{Probability and Regression Review} chapter of \emph{Causal Inference: The Mixtape}.
+#'
+#' @format A data frame with 74 rows and 12 variables
+#' \describe{
+#'   \item{make}{Make and Model}
+#'   \item{price}{Price}
+#'   \item{mpg}{Mileage (mpg)}
+#'   \item{rep78}{Repair Record 1978}
+#'   \item{headroom}{Headroom (in.)}
+#'   \item{trunk}{Trunk space (cu. ft.)}
+#'   \item{weight}{Weight (lbs.)}
+#'   \item{length}{Length (in.)}
+#'   \item{turn}{Turn Circle (ft.)}
+#'   \item{displacement}{Displacement (cu. in.)}
+#'   \item{gear_ratio}{Gear Ratio}
+#'   \item{foreign}{Car type; 0 = Domestic, 1 = Foreign}
+#' }
+#' @encoding UTF-8
+#' @source Chambers, J. M., W. S. Cleveland, B. Kleiner, and P. A. Tukey. 1983. Graphical Methods for Data Analysis. Belmont, CA: Wadsworth.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"auto"

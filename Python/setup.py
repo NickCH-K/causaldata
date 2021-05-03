@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 VERSION = '0.0.3' 
 DESCRIPTION = 'Example Data Sets for Causal Inference'
-LONG_DESCRIPTION = 'Example data sets for running code examples from causal inference textbooks. For now this includes only data sets from The Effect by Huntington-Klein'
+LONG_DESCRIPTION = 'Example data sets for running code examples from causal inference textbooks. For now this includes data sets from The Effect by Huntington-Klein and Causal Inference: The Mixtape by Cunningham.'
 
 # Setting up
 setup(
@@ -16,7 +16,7 @@ setup(
         'causaldata.*']),
         include_package_data = True,
         license="MIT license",
-        install_requires=['statsmodels'],
+        install_requires=['statsmodels','pandas'],
         keywords=['python', 'causal inference', 'example data'],
         classifiers= [
             "Development Status :: 3 - Alpha",
