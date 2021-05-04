@@ -269,3 +269,64 @@
 #' @source Chambers, J. M., W. S. Cleveland, B. Kleiner, and P. A. Tukey. 1983. Graphical Methods for Data Analysis. Belmont, CA: Wadsworth.
 #' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
 "auto"
+
+#' A simple simulated data set for calculating p-values
+#'
+#' This simulated data allows for a quick and easy calculation of a p-value using randomization inference.
+#'
+#' This data is used in the \emph{Potential Outcomes Causal Model} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 8 rows and 5 variables
+#' \describe{
+#'   \item{name}{Fictional Name}
+#'   \item{d}{Treatment}
+#'   \item{y}{Outcome}
+#'   \item{y0}{Outcome if untreated}
+#'   \item{y1}{Outcome if treated}
+#' }
+#' @encoding UTF-8
+#' @source Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"ri"
+
+#' Data on 19th century English Poverty from Yule (1899)
+#'
+#' \code{yule} allows for a look at the correlation between poverty relief and poverty rates in England in the 19th century.
+#'
+#' This data is used in the Potential Outcomes Causal Model chapter of Causal Inference: The Mixtape by Cunningham.
+#'
+#' @format A data frame with 32 rows and 5 variables
+#' \describe{
+#'   \item{location}{Location in England}
+#'   \item{paup}{Pauperism Growth}
+#'   \item{outrelief}{Poverty Relief Growth}
+#'   \item{old}{Annual growth in aged population}
+#'   \item{pop}{Annual growth in population}
+#' }
+#' @encoding UTF-8
+#' @source Yule, G. Udny. 1899. 'An Investigation into the Causes of Changes in Pauperism in England, Chiefly During the Last Two Interensal Decades.' Journal of Royal Statistical Society 62: 249–95.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"yule"
+
+#' Data from HIV information experiment in Thornton (2008)
+#'
+#' \code{thornton_hiv} comes from an experiment in Malawi looking at whether cash incentives could encourage people to learn the results of their HIV tests.
+#'
+#' This data is used in the Potential Outcomes Causal Model chapter of Causal Inference: The Mixtape by Cunningham.
+#'
+#' @format A data frame with 4820 rows and 7 variables
+#' \describe{
+#' \item{villnum}{Village ID}
+#' \item{got}{Got HIV results}
+#' \item{distvct}{Distance in kilometers}
+#' \item{tinc}{Total incentive}
+#' \item{any}{Received any incentive}
+#' \item{age}{Age}
+#' \item{hiv2004}{HIV results}
+#' }
+#' @encoding UTF-8
+#' @source Thornton, Rebecca L. 2008. 'The Demand for, and Impact of, Learning Hiv Status.' American Economic Review 98 (5): 1829–63.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"thornton_hiv"
+
+

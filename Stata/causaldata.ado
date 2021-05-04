@@ -17,7 +17,9 @@ prog def causaldata
 		di as text "Mroz.dta"
 		di as text "organ_donations.dta"
 		di as text "restaurant_inspections.dta"
+		di as text "ri.dta"
 		di as text "social_insure.dta"
+		di as text "yule.dta"
 	}
 	else if inlist("`d'","black_politicians","black_politicians.dta") {
 		di as error "black_politicians.dta"
@@ -93,6 +95,22 @@ prog def causaldata
 		di ""
 		di as text "The restaurant_inspections data contains data on restaurant health inspections performed in Anchorage, Alaska."
 	}
+	else if inlist("`d'","ri","ri.dta") {
+		di as error "ri.dta"
+		di as text "Source: Cunningham, Scott. 2021. Causal Inference: The Mixtape. Yale Press. https://mixtape.scunning.com/index.html."
+		di ""
+		di "Used in the Potential Outcomes Causal Model chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "A small simulated data set for the purpose of performing randomization inference to get a p-value."
+	}
+	else if inlist("`d'","yule","yule.dta") {
+		di as error "yule.dta"
+		di as text "Source: Yule, G. Udny. 1899. 'An Investigation into the Causes of Changes in Pauperism in England, Chiefly During the Last Two Interensal Decades.' Journal of Royal Statistical Society 62: 249–95."
+		di ""
+		di "Used in the Potential Outcomes Causal Model chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "Data on poverty rates and poverty relief in England in the 19th century."
+	}
 	else if inlist("`d'","social_insure","social_insure.dta") {
 		di as error "social_insure.dta"
 		di as text "Source: Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and the decision to insure. American Economic Journal: Applied Economics, 7(2), pp.81-108."
@@ -100,6 +118,14 @@ prog def causaldata
 		di "Used in the Instrumental Variables chapter in The Effect by Huntington-Klein"
 		di ""
 		di as text "The social_insure data contains data from Jai, De Janvry, and Saoudlet (2015) on a two-round social network-based experiment on getting farmers to get insurance. See the paper for more details."
+	}
+	else if inlist("`d'","thornton_hiv","thornton_hiv.dta") {
+		di as error "yule.dta"
+		di as text "Source: Thornton, Rebecca L. 2008. “The Demand for, and Impact of, Learning Hiv Status.” American Economic Review 98 (5): 1829–63."
+		di ""
+		di "Used in the Potential Outcomes Causal Model chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "This data comes from an experiment in Malawi looking at whether cash incentives could encourage people to learn the results of their HIV tests."
 	}
 	else {
 		di as error "Unrecognized data set entered for d."

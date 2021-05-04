@@ -36,7 +36,7 @@ NOTE = """::
 
 
 def load_pandas():
-    """Load the social_insure data and returns a Dataset class.
+    """Load the auto data and returns a Dataset class.
     Returns
     -------
     Dataset
@@ -47,7 +47,7 @@ def load_pandas():
 
 
 def load(as_pandas=None):
-    """Load the social_insure data and returns a Dataset class.
+    """Load the auto data and returns a Dataset class.
     Parameters
     ----------
     as_pandas : bool
