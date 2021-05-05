@@ -21,3 +21,8 @@ F social_insure.dta
 F ri.dta
 F yule.dta
 F thornton_hiv.dta
+F titanic.dta
+F training_example.dta
+F training_bias_reduction.dta
+F nsw_mixtape.dta
+F cps_mixtape.dta

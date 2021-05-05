@@ -329,4 +329,115 @@
 #' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
 "thornton_hiv"
 
+#' Data from the sinking of the Titanic
+#'
+#' \code{titanic} comes from the sinking of the Titanic, and can be used to look at survival by different demographic characteristics.
+#'
+#' This data is used in the Matching and Subclassification chapter of Causal Inference: The Mixtape by Cunningham.
+#'
+#' @format A data frame with 4820 rows and 7 variables
+#' \describe{
+#' \item{villnum}{Village ID}
+#' \item{got}{Got HIV results}
+#' \item{distvct}{Distance in kilometers}
+#' \item{tinc}{Total incentive}
+#' \item{any}{Received any incentive}
+#' \item{age}{Age}
+#' \item{hiv2004}{HIV results}
+#' }
+#' @encoding UTF-8
+#' @source British Board of Trade (1990), Report on the Loss of the ‘Titanic’ (S.S.). British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"titanic"
 
+#' Simulated data from a job training program
+#'
+#' This simulated data, which is presented in the form of a full results, table, is used to demonstrate a matching procedure.
+#'
+#' This data is used in the \emph{Matching and Subclassification} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 25 rows and 9 variables
+#' \describe{
+#' \item{unit_treat}{Unit ID for treated observations}
+#' \item{age_treat}{age for treated observations}
+#' \item{earnings_treat}{earnings for treated observations}
+#' \item{unit_control}{Unit ID for control observations}
+#' \item{age_control}{age for control observations}
+#' \item{earnings_control}{earnings for control observations}
+#' \item{unit_matched}{Unit ID for matched controls}
+#' \item{age_matched}{age for matched controls}
+#' \item{earnings_matched}{earnings for matched controls}
+#' }
+#' @encoding UTF-8
+#' @source Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"training_example"
+
+#' Simulated data from a job training program for a bias reduction method
+#'
+#' This simulated data is used to demonstrate the bias-reduction method in matching as per Abadie and Imbens (2011).
+#'
+#' This data is used in the \emph{Matching and Subclassification} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 8 rows and 4 variables
+#' \describe{
+#' \item{Unit}{Unit ID}
+#' \item{Y}{Outcome}
+#' \item{D}{Treatment}
+#' \item{X}{Matching variable}
+#' }
+#' @encoding UTF-8
+#' @source Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"training_bias_reduction"
+
+#' Data from the National Supported Work Demonstration (NSW) job-training program
+#'
+#' Data from the National Supported Work Demonstration (NSW) job-training program experiment, where those treated were guaranteed a job for 9-18 months.
+#'
+#' This data is used in the \emph{Matching and Subclassification} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 445 rows and 11 variables
+#' \describe{
+#' \item{data_id}{Individual ID}
+#' \item{treat}{In the National Supported Work Demonstration Job Training Program}
+#' \item{age}{Age in years}
+#' \item{educ}{Years of education}
+#' \item{black}{Race: Black}
+#' \item{hisp}{Ethnicity: Hispanic}
+#' \item{marr}{Married}
+#' \item{nodegree}{Has no degree}
+#' \item{re74}{Real earnings 1974}
+#' \item{re75}{Real earnings 1975}
+#' \item{re78}{Real earnings 1978}
+#' }
+#' @encoding UTF-8
+#' @source Lalonde, Robert. 1986. “Evaluating the Econometric Evaluations of Training Programs with Experimental Data.” American Economic Review 76 (4): 604–20.
+#' @source Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in Nonexperimental Studies: Reevaluating the Evaluation of Training Programs.” Journal of the American Statistical Association 94 (448): 1053–62.".
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"nsw_mixtape"
+
+#' Observational counterpart to nsw_mixtape data
+#'
+#' Data from the Current Population Survey on participation in the National Supported Work Demonstration (NSW) job-training program experiment. This is used as an observational comparison to the NSW experimental data from the nsw_mixtape data.
+#'
+#' This data is used in the \emph{Matching and Subclassification} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 15992 rows and 11 variables
+#' \describe{
+#' \item{data_id}{Individual ID}
+#' \item{treat}{In the National Supported Work Demonstration Job Training Program}
+#' \item{age}{Age in years}
+#' \item{educ}{Years of education}
+#' \item{black}{Race: Black}
+#' \item{hisp}{Ethnicity: Hispanic}
+#' \item{marr}{Married}
+#' \item{nodegree}{Has no degree}
+#' \item{re74}{Real earnings 1974}
+#' \item{re75}{Real earnings 1975}
+#' \item{re78}{Real earnings 1978}
+#' }
+#' @encoding UTF-8
+#' @source Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in Nonexperimental Studies: Reevaluating the Evaluation of Training Programs.” Journal of the American Statistical Association 94 (448): 1053–62.".
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"cps_mixtape"
