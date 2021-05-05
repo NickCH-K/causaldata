@@ -33,6 +33,14 @@ prog def causaldata
 		di ""
 		di as text "The black_politicians data contains data from Broockman (2013) on a field experiment where the author sent fictional emails purportedly sent by Black people to legislators in the United States. The experiment sought to determine whether the effect of the email being from 'out-of-district' (someone who can't vote for you and so provides no extrinsic motivation to reply) would have a smaller effect on response rates for Black legislators than for non-Black ones, providing evidence of additional intrinsic motivation on the part of Black legislators to help Black people."
 	}
+	else if inlist("`d'","close_elections_lmb","close_elections_lmb.dta") {
+		di as error "close_elections_lmb.dta"
+		di as text "Source: Lee, David S., Enrico Moretti, and Matthew J. Butler. 2004. “Do Voters Affect or Elect Policies: Evidence from the U.S. House.” Quarterly Journal of Economics 119 (3): 807–59."
+		di ""
+		di "Used in the Regression Discontinuity chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "This data comes from a close-elections regression discontinuity study from Lee, Moretti, and Butler (2004). The design is intended to test convergence and divergence in policy. Major effects of electing someone from a particular party on policy outcomes *in a close race* indicates that the victor does what they want. Small or null effects indicate that the electee moderates their position towards their nearly-split electorate."
+	}
 	else if inlist("`d'","cps_mixtape","cps_mixtape.dta") {
 		di as error "cps_mixtape.dta"
 		di as text "Source: Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in Nonexperimental Studies: Reevaluating the Evaluation of Training Programs.” Journal of the American Statistical Association 94 (448): 1053–62."
