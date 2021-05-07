@@ -9,6 +9,7 @@ prog def causaldata
 		di as text "Do {cmd: causaldata, d(name)} for more information, or {cmd: sysuse [name]} to load."
 		di ""
 		di as text "black_politicians.dta"
+		di as text "close_college.dta"
 		di as text "gapminder.dta"
 		di as text "google_stock.dta"
 		di as text "gov_transfers.dta"
@@ -40,6 +41,14 @@ prog def causaldata
 		di "Used in the Regression Discontinuity chapter in Causal Inference: the Mixtape by Cunningham."
 		di ""
 		di as text "This data comes from a close-elections regression discontinuity study from Lee, Moretti, and Butler (2004). The design is intended to test convergence and divergence in policy. Major effects of electing someone from a particular party on policy outcomes *in a close race* indicates that the victor does what they want. Small or null effects indicate that the electee moderates their position towards their nearly-split electorate."
+	}
+	else if inlist("`d'","close_college","close_college.dta") {
+		di as error "close_college.dta"
+		di as text "Source: Card, David. 1995. “Aspects of Labour Economics: Essays in Honour of John Vanderkamp.” In. University of Toronto Press."
+		di ""
+		di "Used in the Instrumental Variables chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "Data from the National Longitudinal Survey Young Men Cohort. This data is used to estimate the effect of college education on earnings, using the presence of a nearby (in-county) college as an instrument for college attendance."
 	}
 	else if inlist("`d'","cps_mixtape","cps_mixtape.dta") {
 		di as error "cps_mixtape.dta"
