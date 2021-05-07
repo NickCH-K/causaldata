@@ -141,6 +141,16 @@ prog def causaldata
 		di ""
 		di as text "A small simulated data set for the purpose of performing randomization inference to get a p-value."
 	}
+	else if inlist("`d'","scorecard","scorecard") {
+		di as error "scorecard.dta"
+		di as text "Source: Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. https://educationdata.urban.org/documentation/, Scorecard."
+		di ""
+		di "Used in the Describing Variables chapter in The Effect by Huntington-Klein"
+		di ""
+		di as text "From the College Scorecard, this data set contains by-college-by-year data on how students who attended those colleges are doing. This data is not just limited to four-year colleges and includes a very wide variety of institutions. Note that the labor market (earnings, working) and repayment rate data do not refer to the same cohort of students, but rather are matched on the year in which outcomes are recorded. Labor market data refers to cohorts beginning college as undergraduates ten years prior, repayment rate data refers to cohorts entering repayment seven years prior. Institution names have been dropped from this file to save space, but are available in the version of this data in the R package."
+#'
+#' Data was downloaded using the Urban Institute's \code{educationdata} package."
+	}
 	else if inlist("`d'","social_insure","social_insure.dta") {
 		di as error "social_insure.dta"
 		di as text "Source: Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and the decision to insure. American Economic Journal: Applied Economics, 7(2), pp.81-108."

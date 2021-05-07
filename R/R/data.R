@@ -486,3 +486,31 @@
 #' @source Card, David. 1995. “Aspects of Labour Economics: Essays in Honour of John Vanderkamp.” In. University of Toronto Press.
 #' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
 "close_college"
+
+#' Earnings and Loan Repayment in US Four-Year Colleges
+#'
+#' From the College Scorecard, this data set contains by-college-by-year data on how students who attended those colleges are doing.
+#'
+#' This data is not just limited to four-year colleges and includes a very wide variety of institutions.
+#'
+#' Note that the labor market (earnings, working) and repayment rate data do not refer to the same cohort of students, but rather are matched on the year in which outcomes are recorded. Labor market data refers to cohorts beginning college as undergraduates ten years prior, repayment rate data refers to cohorts entering repayment seven years prior.
+#'
+#' Data was downloaded using the Urban Institute's \code{educationdata} package.
+#'
+#' This data was used in the \emph{Describing Variables} chapter of The Effect by Huntington-Klein
+#'
+#' @format A data frame with 48,445 rows and 8 variables:
+#' \describe{
+#'   \item{unitid}{College identifiers}
+#'   \item{inst_name}{Name of the college or university}
+#'   \item{state_abbr}{Two-letter abbreviation for the state the college is in}
+#'   \item{pred_degree_awarded_ipeds}{Predominant degree awarded. 1 = less-than-two-year, 2 = two-year, 3 = four-year+}
+#'   \item{year}{Year in which outcomes are measured}
+#'   \item{earnings_med}{Median earnings among students (a) who received federal financial aid, (b) who began as undergraduates at the institution ten years prior, (c) with positive yearly earnings}
+#'   \item{count_not_working}{Number of students who are (a) not working (not necessarily unemployed), (b) received federal financial aid, and (c) who began as undergraduates at the institution ten years prior}
+#'   \item{count_working}{Number of students who are (a) working, (b) who received federal financial aid, and (c) who began as undergraduates at the institution ten years prior}
+#' }
+#' @encoding UTF-8
+#' @source Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. https://educationdata.urban.org/documentation/, Scorecard.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+"scorecard"
