@@ -514,3 +514,67 @@
 #' @source Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. https://educationdata.urban.org/documentation/, Scorecard.
 #' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
 "scorecard"
+
+#' Data on avocado sales
+#'
+#' This data set includes information on the average price and total amount of avocados sold across 169 weeks from 2015 to 2018. This data covers only sales of 'conventional' avocados that take place in California.
+#'
+#' This data was used in the \emph{Identification} chapter of The Effect by Huntington-Klein
+#'
+#' @format A data frame with 169 rows and 3 variables:
+#' \describe{
+#'   \item{Date}{Date of observation}
+#'   \item{AveragePrice}{Average avocado price}
+#'   \item{TotalVolume}{Total volume of avocados sold}
+#' }
+#' @encoding UTF-8
+#' @source Kiggins, Justin. 2018. \url{https://www.kaggle.com/neuromusic/avocado-prices/}
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+"avocado"
+
+#' Data from a survey of internet-mediated sex workers
+#'
+#' This data comes from a survey of 700 internet-mediated sex workers in 2008 and 2009, asking the same sex workers standard labor market information over several time periods.
+#'
+#' This data is used in the \emph{Panel Data} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 1787 rows and 31 variables
+#' \describe{
+#' \item{id}{Provider identifier}
+#' \item{session}{Client session identifier}
+#' \item{age}{Age of provider}
+#' \item{age_cl}{Age of Client}
+#' \item{appearance_cl}{Client Attractiveness (Scale of 1 to 10)}
+#' \item{bmi}{Body Mass Index}
+#' \item{schooling}{Imputed Years of Schooling}
+#' \item{asq_cl}{Age of Client Squared}
+#' \item{provider_second}{Second Provider Involved}
+#' \item{asian_cl}{Asian Client}
+#' \item{black_cl}{Black Client}
+#' \item{hispanic_cl}{Hispanic Client}
+#' \item{othrace_cl}{Other Ethnicity Client}
+#' \item{reg}{Client was a Regular}
+#' \item{hot}{Met Client in Hotel}
+#' \item{massage_cl}{Gave Client a Massage}
+#' \item{lnw}{Log of Hourly Wage}
+#' \item{llength}{Ln(Length)}
+#' \item{unsafe}{Unprotected sex with client of any kind}
+#' \item{asian}{race==1. Asian}
+#' \item{black}{race==2. Black}
+#' \item{hispanic}{race==3. Hispanic}
+#' \item{other}{race==4. Other}
+#' \item{white}{race==5. White}
+#' \item{asq}{Age of provider squared}
+#' \item{cohab}{ms==Cohabitating (living with a partner) but unmarried}
+#' \item{married}{ms==Currently married and living with your spouse}
+#' \item{divorced}{ms==Divorced and not remarried}
+#' \item{separated}{ms==Married but not currently living with your spouse}
+#' \item{nevermarried}{ms==Single and never married}
+#' \item{widowed}{ms==Widowed and not remarried}
+#' }
+#' @encoding UTF-8
+#' @source Cunningham, Scott, and Todd D. Kendall. 2011. “Prostitution 2.0: The Changing Face of Sex Work.” Journal of Urban Economics 69: 273–87.
+#' @source Cunningham, Scott, and Todd D. Kendall. 2014. “Examining the Role of Client Reviews and Reputation Within Online Prostitution.” In, edited by Scott Cunningham and Manisha Shah. Vol. Handbook on the Economics of Prostitution. Oxford University Press.
+#' @source Cunningham, Scott, and Todd D. Kendall. 2016. “Prostitution Labor Supply and Education.” Review of Economics of the Household. Forthcoming.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"adult_services"
