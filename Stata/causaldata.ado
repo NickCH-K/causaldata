@@ -8,9 +8,11 @@ prog def causaldata
 		di as text "List of available data sets from this package:"
 		di as text "Do {cmd: causaldata, d(name)} for more information, or {cmd: sysuse [name]} to load."
 		di ""
+		di as text "abortion.dta"
 		di as text "adult_services.dta"
 		di as text "avocado.dta"
 		di as text "black_politicians.dta"
+		di as text "castle.dta"
 		di as text "close_college.dta"
 		di as text "close_elections_lmb.dta"
 		di as text "close_college.dta"
@@ -32,6 +34,14 @@ prog def causaldata
 		di as text "training_bias_reduction.dta"
 		di as text "training_example.dta"
 		di as text "yule.dta"
+	}
+	else if inlist("`d'","abortion","abortion.dta") {
+		di as error "abortion.dta"
+		di as text "Source: Cunningham, Scott, and Christopher Cornwell. 2013. “The Long-Run Effect of Abortion on Sexually Transmitted Infections.” American Law and Economics Review 15 (1): 381–407."
+		di ""
+		di "Used in the Difference-in-Differences chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "This data looks at the effect of abortion legalization on the incidence of gonnorhea among 15-19 year olds, as a measure of risky behavior. Treatment is whether abortion is legalized at the time that the eventual 15-19 year olds are born."
 	}
 	else if inlist("`d'","adult_services","adult_services.dta") {
 		di as error "adult_services.dta"
@@ -58,6 +68,14 @@ prog def causaldata
 		di "Used in the Matching chapter in The Effect by Huntington-Klein"
 		di ""
 		di as text "The black_politicians data contains data from Broockman (2013) on a field experiment where the author sent fictional emails purportedly sent by Black people to legislators in the United States. The experiment sought to determine whether the effect of the email being from 'out-of-district' (someone who can't vote for you and so provides no extrinsic motivation to reply) would have a smaller effect on response rates for Black legislators than for non-Black ones, providing evidence of additional intrinsic motivation on the part of Black legislators to help Black people."
+	}
+	else if inlist("`d'","castle","castle.dta") {
+		di as error "castle.dta"
+		di as text "Source: Cheng, Cheng, and Mark Hoekstra. 2013. “Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Expansions to Castle Doctrine.” Journal of Human Resources 48 (3): 821–54."
+		di ""
+		di "Used in the Difference-in-Differences chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "This data looks at the impact of castle-doctrine statutes on violent crime. Data from the FBI Uniform Crime Reports Summary files are combined with information on castle-doctrine/stand-your-ground law impementation in different states."
 	}
 	else if inlist("`d'","close_elections_lmb","close_elections_lmb.dta") {
 		di as error "close_elections_lmb.dta"

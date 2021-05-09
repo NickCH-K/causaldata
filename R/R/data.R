@@ -578,3 +578,84 @@
 #' @source Cunningham, Scott, and Todd D. Kendall. 2016. “Prostitution Labor Supply and Education.” Review of Economics of the Household. Forthcoming.
 #' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
 "adult_services"
+
+#' Data on abortion legalization and sexually transmitted infections
+#'
+#' This data looks at the effect of abortion legalization on the incidence of gonnorhea among 15-19 year olds, as a measure of risky behavior. Treatment is whether abortion is legalized at the time that the eventual 15-19 year olds are born.
+#'
+#' This data is used in the \emph{Difference-in-Differences} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 19584 rows and 21 variables
+#' \describe{
+#' \item{fip}{State FIPS code}
+#' \item{age}{Age in years}
+#' \item{race}{Race - 1 = white, 2 = black}
+#' \item{year}{Year}
+#' \item{sex}{Sex: 1 = male, 2 = female}
+#' \item{totpop}{Total population}
+#' \item{ir}{Incarcerated Males per 100,000}
+#' \item{crack}{Crack index}
+#' \item{alcohol}{Alcohol consumption per capita}
+#' \item{income}{Real income per capita}
+#' \item{ur}{State unemployment rate}
+#' \item{poverty}{Poverty rate}
+#' \item{repeal}{In a state with an early repeal of abortion prohibition}
+#' \item{acc}{AIDS mortality per 100,000 cumulative in t, t-1, t-2, t-3}
+#' \item{wht}{White Indicator}
+#' \item{male}{Male Indicator}
+#' \item{lnr}{Logged gonnorhea cases per 100,000 in 15-19 year olds}
+#' \item{younger}{From the younger group}
+#' \item{fa}{State-younger interaction}
+#' \item{pi}{Parental involvement law in effect}
+#' \item{bf15}{Is a black female in the 15-19 age group}
+#' }
+#' @encoding UTF-8
+#' @source Cunningham, Scott, and Christopher Cornwell. 2013. “The Long-Run Effect of Abortion on Sexually Transmitted Infections.” American Law and Economics Review 15 (1): 381–407.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"abortion"
+
+
+#' Data on castle-doctrine statutes and violent crime
+#'
+#' This data looks at the impact of castle-doctrine statutes on violent crime. Data from the FBI Uniform Crime Reports Summary files are combined with information on castle-doctrine/stand-your-ground law impementation in different states.
+#'
+#' This data is used in the \emph{Difference-in-Differences} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 19584 rows and 21 variables
+#' \describe{
+#' \item{year}{Year}
+#' \item{sid}{state id}
+#' \item{robbery_gun_r}{Region-quarter fixed effects}
+#' \item{jhcitizen_c}{justifiable homicide by private citizen count}
+#' \item{jhpolice_c}{justifiable homicide by police count}
+#' \item{homicide}{homicide count per 100,000 state population}
+#' \item{robbery}{Region-quarter fixed effects}
+#' \item{assault}{aggravated assault count per 100,000 state population}
+#' \item{burglary}{burglary count per 100,000 state population}
+#' \item{larceny}{larceny count per 100,000 state population}
+#' \item{motor}{motor vehicle theft count per 100,000 state population}
+#' \item{murder}{murder count per 100,000 state population}
+#' \item{unemployrt}{unemployment rate}
+#' \item{blackm_15_24}{\% of black male aged 15-24}
+#' \item{whitem_15_24}{\% of white male aged 15-24}
+#' \item{blackm_25_44}{\% of black male aged 25-44}
+#' \item{whitem_25_44}{\% of white male aged 25-44}
+#' \item{poverty}{poverty rate}
+#' \item{r20001-r20104}{Region-quarter fixed effects}
+#' \item{trend_1-trend_51}{State linear time trends}
+#' \item{l_homicide}{Logged crime rate}
+#' \item{l_larceny}{Logged crime rate}
+#' \item{l_motor}{Logged crime rate}
+#' \item{l_police}{Logged police presence}
+#' \item{l_income}{Logged income}
+#' \item{l_prisoner}{Logged number of prisoners}
+#' \item{l_lagprisoner}{Lagged log prisoners}
+#' \item{l_exp_subsidy}{Logged subsidy spending}
+#' \item{l_exp_pubwelfare}{Logged public welfare spending}
+#' \item{lead1-lag5}{Indicators of how many time periods until/since treatment}
+#' \item{popwt}{Population weight}
+#' }
+#' @encoding UTF-8
+#' @source Cheng, Cheng, and Mark Hoekstra. 2013. “Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Expansions to Castle Doctrine.” Journal of Human Resources 48 (3): 821–54.
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"castle"
