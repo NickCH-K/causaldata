@@ -17,6 +17,7 @@ prog def causaldata
 		di as text "close_elections_lmb.dta"
 		di as text "close_college.dta"
 		di as text "cps_mixtape.dta"
+		di as text "credit_cards.dta"
 		di as text "gapminder.dta"
 		di as text "google_stock.dta"
 		di as text "gov_transfers.dta"
@@ -28,9 +29,10 @@ prog def causaldata
 		di as text "restaurant_inspections.dta"
 		di as text "ri.dta"
 		di as text "scorecard.dta"
+		di as text "snow.dta"
 		di as text "social_insure.dta"
-		di as text "thornton_hiv.dta"
 		di as text "texas.dta"
+		di as text "thornton_hiv.dta"
 		di as text "titanic.dta"
 		di as text "training_bias_reduction.dta"
 		di as text "training_example.dta"
@@ -242,7 +244,7 @@ prog def causaldata
 		di ""
 		di as text "This data comes from the sinking of the Titanic, and can be used to look at survival by different demographic characteristics."
 	}
-	else if inlist("`d'","training_bias_reduction","training_bias_reduction") {
+	else if inlist("`d'","training_bias_reduction","training_bias_reduction.dta") {
 		di as error "training_bias_reduction.dta"
 		di as text "Source: Cunningham, Scott. 2021. Causal Inference: The Mixtape. Yale Press. https://mixtape.scunning.com/index.html."
 		di ""
@@ -250,7 +252,7 @@ prog def causaldata
 		di ""
 		di as text "This simulated data is used to demonstrate the bias-reduction method in matching as per Abadie and Imbens (2011)."
 	}
-	else if inlist("`d'","training_example","training_example") {
+	else if inlist("`d'","training_example","training_example.dta") {
 		di as error "training_example.dta"
 		di as text "Source: Cunningham, Scott. 2021. Causal Inference: The Mixtape. Yale Press. https://mixtape.scunning.com/index.html."
 		di ""
