@@ -659,3 +659,66 @@
 #' @source Cheng, Cheng, and Mark Hoekstra. 2013. “Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Expansions to Castle Doctrine.” Journal of Human Resources 48 (3): 821–54.
 #' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
 "castle"
+
+#' Data on prison capacity expansion in Texas
+#'
+#' This data looks at the massive expansion in prison capacity in Texas that occurred in 1993 under Governor Ann Richards, and the effect of that expansion on the number of Black men in prison.
+#'
+#' This data is used in the \emph{Synthetic Control} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
+#'
+#' @format A data frame with 816 rows and 12 variables
+#' \describe{
+#' \item{statefip}{State FIPS code}
+#' \item{year}{Year}
+#' \item{bmprison}{Number of Black men in prison}
+#' \item{wmprison}{Number of White men in prison}
+#' \item{alcohol}{Alcohol consumption per capita}
+#' \item{income}{Median income}
+#' \item{ur}{Unemployment rate}
+#' \item{poverty}{Poverty rate}
+#' \item{black}{Percentage of the population that is Black}
+#' \item{perc1519}{Percentage of the population that is age 15-19}
+#' \item{aidscapita}{AIDS mortality per 100,000 in t}
+#' \item{state}{State name}
+#' }
+#' @encoding UTF-8
+#' @source Cunningham and Kang. 2019. “Studying the Effect of Incarceration Shocks to Drug Markets.” Unpublished manuscript. http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf
+#' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
+"texas"
+
+#' Data from John Snow's 1855 study of the cause of cholera
+#'
+#' A subset of the aggregated death rate data from Snow's legendary study of the source of the London Cholera outbreak.
+#'
+#' This data is used in the \emph{Difference-in-Differences} chapter of \emph{The Effect} by Huntington-Klein.
+#'
+#' @format A data frame with 4 rows and 4 variables
+#' \describe{
+#' \item{year}{Year}
+#' \item{supplier}{Water pump supplier}
+#' \item{treatment}{Status of water pump}
+#' \item{deathrate}{Deaths per 10k 1851 population}
+#' }
+#' @encoding UTF-8
+#' @source Snow, John. 1855. 'On the Mode of Communication of Cholera'. John Churchill."
+#' @source Coleman, Thomas. 2019. 'Causality in the time of cholera: John Snow as a prototype for causal inference.' SSRN 3262234."
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+"snow"
+
+#' Data on Taiwanese Credit Card Holders
+#'
+#' Data from the UCI Machine Learning Repository on Taiwanese credit card holders, the amount of their credit card bill, and whether their payment was late.
+#'
+#' This data is used in the \emph{Matching} chapter of \emph{The Effect} by Huntington-Klein.
+#'
+#' @format A data frame with 30000 rows and 4 variables
+#' \describe{
+#' \item{LateSept}{Credit card payment is late in Sept 2005}
+#' \item{LateApril}{Credit card payment is late in April 2005}
+#' \item{BillApril}{Total bill in April 2005 in thousands of New Taiwan Dollars}
+#' \item{AGE}{Age of card-holder}
+#' }
+#' @encoding UTF-8
+#' @source Lichman, Moshe. 2013. UCI Machine Learning Repository.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+"credit_cards"

@@ -30,6 +30,7 @@ prog def causaldata
 		di as text "scorecard.dta"
 		di as text "social_insure.dta"
 		di as text "thornton_hiv.dta"
+		di as text "texas.dta"
 		di as text "titanic.dta"
 		di as text "training_bias_reduction.dta"
 		di as text "training_example.dta"
@@ -100,6 +101,14 @@ prog def causaldata
 		di "Used in the Matching and Subclassification chapter in Causal Inference: the Mixtape by Cunningham."
 		di ""
 		di as text "Data from the Current Population Survey on participation in the National Supported Work Demonstration (NSW) job-training program experiment. This is used as an observational comparison to the NSW experimental data from the nsw_mixtape data."
+	}
+	else if inlist("`d'","credit_cards","credit_cards.dta") {
+		di as error "credit_cards.dta"
+		di as text "Source: Lichman, Moshe. 2013. UCI Machine Learning Repository."
+		di ""
+		di "Used in the Matching chapter in The Effect by Huntington-Klein"
+		di ""
+		di as text "Data from the UCI Machine Learning Repository on Taiwanese credit card holders, the amount of their credit card bill, and whether their payment was late."
 	}
 	else if inlist("`d'","gapminder","gapminder.dta") {
 		di as error "gapminder.dta"
@@ -184,15 +193,22 @@ prog def causaldata
 		di ""
 		di as text "A small simulated data set for the purpose of performing randomization inference to get a p-value."
 	}
-	else if inlist("`d'","scorecard","scorecard") {
+	else if inlist("`d'","scorecard","scorecard.dta") {
 		di as error "scorecard.dta"
 		di as text "Source: Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. https://educationdata.urban.org/documentation/, Scorecard."
 		di ""
 		di "Used in the Describing Variables chapter in The Effect by Huntington-Klein"
 		di ""
 		di as text "From the College Scorecard, this data set contains by-college-by-year data on how students who attended those colleges are doing. This data is not just limited to four-year colleges and includes a very wide variety of institutions. Note that the labor market (earnings, working) and repayment rate data do not refer to the same cohort of students, but rather are matched on the year in which outcomes are recorded. Labor market data refers to cohorts beginning college as undergraduates ten years prior, repayment rate data refers to cohorts entering repayment seven years prior. Institution names have been dropped from this file to save space, but are available in the version of this data in the R package."
-#'
-#' Data was downloaded using the Urban Institute's \code{educationdata} package."
+	}
+	else if inlist("`d'","snow","snow.dta") {
+		di as error "snow.dta"
+		di as text "Source: Snow, John. 1855. 'On the Mode of Communication of Cholera'. John Churchill."
+		di as text "Source: Coleman, Thomas. 2019. 'Causality in the time of cholera: John Snow as a prototype for causal inference.' SSRN 3262234."
+		di ""
+		di "Used in the Difference-in-Differences chapter in The Effect by Huntington-Klein"
+		di ""
+		di as text "A subset of the aggregated death rate data from Snow's legendary study of the source of the London Cholera outbreak."
 	}
 	else if inlist("`d'","social_insure","social_insure.dta") {
 		di as error "social_insure.dta"
@@ -203,12 +219,20 @@ prog def causaldata
 		di as text "The social_insure data contains data from Jai, De Janvry, and Saoudlet (2015) on a two-round social network-based experiment on getting farmers to get insurance. See the paper for more details."
 	}
 	else if inlist("`d'","thornton_hiv","thornton_hiv.dta") {
-		di as error "yule.dta"
+		di as error "thornton_hiv.dta"
 		di as text "Source: Thornton, Rebecca L. 2008. “The Demand for, and Impact of, Learning Hiv Status.” American Economic Review 98 (5): 1829–63."
 		di ""
 		di "Used in the Potential Outcomes Causal Model chapter in Causal Inference: the Mixtape by Cunningham."
 		di ""
 		di as text "This data comes from an experiment in Malawi looking at whether cash incentives could encourage people to learn the results of their HIV tests."
+	}
+	else if inlist("`d'","texas","texas.dta") {
+		di as error "texas.dta"
+		di as text "Source: Cunningham and Kang. 2019. “Studying the Effect of Incarceration Shocks to Drug Markets.” Unpublished manuscript. http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf"
+		di ""
+		di "Used in the Synthetic Control chapter in Causal Inference: the Mixtape by Cunningham."
+		di ""
+		di as text "This data looks at the massive expansion in prison capacity in Texas that occurred in 1993 under Governor Ann Richards, and the effect of that expansion on the number of Black men in prison."
 	}
 	else if inlist("`d'","titanic","titanic.dta") {
 		di as error "titanic.dta"
