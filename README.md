@@ -2,7 +2,7 @@
 
 This repository will contain R, Stata, and Python packages, all called `causaldata`, which contain data sets that can be used to implement the code examples in causal inference textbooks.
 
-As of the moment, this contains data sets from [The Effect](http://www.nickchk.com/causalitybook.html) by Huntington-Klein. Data sets from [Causal Inference: The Mixtape](https://mixtape.scunning.com/index.html) by Scott Cunningham are currently being added. The `judge_fe` data set from The Mixtape is too large to include, and so is omitted.
+As of the moment, this contains data sets from [The Effect](http://www.nickchk.com/causalitybook.html) by Huntington-Klein and  [Causal Inference: The Mixtape](https://mixtape.scunning.com/index.html) by Scott Cunningham are included in the package. The `judge_fe` data set from The Mixtape is too large to include, and so is omitted.
 
 Data sets all come with documentation in the form of variable labels, although the exact format of this varies from language to language.
 
