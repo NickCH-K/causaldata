@@ -10,7 +10,8 @@ Authors@R:
       person(given = "Malcolm",
              family = "Barrett",
              role = "aut",
-             email = "malcolmbarrett@gmail.com"))
+             email = "malcolmbarrett@gmail.com",
+             comment = c(ORCID = "0000-0003-0299-5825")))
 Description: This package contains example data sets to run the example
     problems from causal inference textbooks. Currently, contains data
     sets for The Effect by Nick Huntington-Klein, Causal Inference: The
