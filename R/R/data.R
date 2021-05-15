@@ -1,4 +1,6 @@
-#' U.S. Women's Labor-Force Participation
+#' @importFrom tibble tibble
+
+#' #' U.S. Women's Labor-Force Participation
 #'
 #' The \code{Mroz} data frame has 753 rows and 8 columns. The observations, from the Panel Study of Income Dynamics (PSID), are married women.
 #'
@@ -694,3 +696,60 @@
 #' @source Lichman, Moshe. 2013. UCI Machine Learning Repository.
 #' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
 "credit_cards"
+
+#' Table 2.2 in Causal Inference
+#'
+#' `greek_data` is a fictional data set from Chapter 2 of Causal Inference. From
+#' the book: "Table 2.2 shows the data from our heart transplant randomized
+#' study. Besides data on treatment *A* (1 if the individual received a
+#' transplant, 0 otherwise) and outcome *Y* (1 if the individual died, 0
+#' otherwise), Table 2.2 also contains data on the prognostic factor *L* (1 if
+#' the individual was in critical condition, 0 otherwise), which we measured
+#' before treatment was assigned."
+#'
+#' @format A data frame with 20 rows and 4 variables: `name`, the name of a
+#'   Greek god, `l`, a prognostic factor, `a`, the treatment, a heart
+#'   transplant, and `y`, the outcome, death.
+#'
+#' @source [Causal Inference](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
+"greek_data"
+
+#' National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
+#'
+#' `nhefs` is a cleaned data set of the data used in Causal Inference by Hernán
+#' and Robins. `nhefs` is dataset containing data from the National Health and
+#' Nutrition Examination Survey Data I Epidemiologic Follow-up Study (NHEFS).
+#' The NHEFS was jointly initiated by the National Center for Health Statistics
+#' and the National Institute on Aging in collaboration with other agencies of
+#' the United States Public Health Service. A detailed description of the NHEFS,
+#' together with publicly available data sets and documentation, can be found at
+#' [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/).
+#'
+#' @format A data frame with 1629 rows and 67 variables. The codebook is available as `nhefs_codebook`.
+#'
+#' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+"nhefs"
+
+#' National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
+#'
+#' `nhefs_complete` is the same as [`nhefs`], but only participants
+#' with complete data are included. The variables that need to be complete to be
+#' included are: `qsmk`, `sex`, `race`, `age`, `school`, `smokeintensity`,
+#' `smokeyrs`, `exercise`, `active`, `wt71`, `wt82`, and `wt82_71`.
+#'
+#' @format A data frame with 1556 rows and 67 variables. The codebook is available as `nhefs_codebook`.
+#'
+#' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+"nhefs_complete"
+
+#' NHEFS Codebook
+#'
+#' `nhefs_codebook` is the codebook for [`nhefs`] and [`nhefs_complete`].
+#'
+#' @format A data frame with 64 rows and 2 variables. Each row contains the name
+#'   of a variable (`variable`) in [`nhefs`] and [`nhefs_complete`] and a
+#'   description of what the variable represents (`description`).
+#'
+#' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+"nhefs_codebook"
+
