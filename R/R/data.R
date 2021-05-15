@@ -1,5 +1,3 @@
-#' @importFrom tibble tibble
-
 #' #' U.S. Women's Labor-Force Participation
 #'
 #' The \code{Mroz} data frame has 753 rows and 8 columns. The observations, from the Panel Study of Income Dynamics (PSID), are married women.
