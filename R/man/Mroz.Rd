@@ -41,6 +41,6 @@ Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression.* Third Ed
 
 Long. J. S. (1997) *Regression Models for Categorical and Limited Dependent Variables.* Sage.
 
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

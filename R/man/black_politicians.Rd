@@ -37,6 +37,6 @@ The \code{black_politicians} data contains data from Broockman (2013) on a field
 This data is used in the \emph{Matching} chapter of \emph{The Effect}.
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

@@ -19,7 +19,7 @@ A data frame with 48,445 rows and 8 variables:
 }
 }
 \source{
-Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. https://educationdata.urban.org/documentation/, Scorecard.
+Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. \url{https://educationdata.urban.org/documentation/}, Scorecard.
 }
 \usage{
 scorecard
@@ -37,6 +37,6 @@ Data was downloaded using the Urban Institute's \code{educationdata} package.
 This data was used in the \emph{Describing Variables} chapter of The Effect by Huntington-Klein
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

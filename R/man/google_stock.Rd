@@ -26,6 +26,6 @@ The \code{google_stock} data contains data on daily stock returns for Google and
 This data was downloaded using the \emph{tidyquant} package, and is used in the \emph{Event Studies} chapter of \emph{The Effect}.
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

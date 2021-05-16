@@ -13,7 +13,7 @@ A data frame with 64 rows and 2 variables.
 }
 }
 \source{
-[wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+\url{wwwn.cdc.gov/nchs/nhanes/nhefs/}
 }
 \usage{
 nhefs_codebook
@@ -22,6 +22,6 @@ nhefs_codebook
 \code{nhefs_codebook} is the codebook for \code{nhefs} and \code{nhefs_complete}.
 }
 \references{
-Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+Hernán and Robins. Causal Inference. \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}
 }
 \keyword{datasets}

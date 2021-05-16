@@ -22,7 +22,7 @@
 #' @references Fox, J. (2000) *Multiple and Generalized Nonparametric Regression.* Sage.
 #' @references Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression.* Third Edition, Sage.
 #' @references Long. J. S. (1997) *Regression Models for Categorical and Limited Dependent Variables.* Sage.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "Mroz"
 
 #' Data on Restaurant Inspections
@@ -41,7 +41,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Camus, Louis-Ashley. 2020. \url{https://www.kaggle.com/loulouashley/inspection-score-restaurant-inspection}
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "restaurant_inspections"
 
 
@@ -63,7 +63,7 @@
 #' @encoding UTF-8
 #' @source \url{http://www.gapminder.org/data/}
 #' @source Jennifer Bryan (2017). gapminder: Data from Gapminder. R package version 0.3.0. \url{https://CRAN.R-project.org/package=gapminder}
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "gapminder"
 
 #' Google Stock Data
@@ -80,7 +80,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Matt Dancho and Davis Vaughan (2021). tidyquant: Tidy Quantitative Financial Analysis. R package version 1.0.3. \url{https://CRAN.R-project.org/package=tidyquant}
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "google_stock"
 
 
@@ -99,7 +99,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Kessler, J.B. and Roth, A.E., 2014. Don't take 'no' for an answer: An experiment with actual organ donor registrations. National Bureau of Economic Research working paper No. 20378. \url{https://www.nber.org/papers/w20378}
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "organ_donations"
 
 
@@ -127,7 +127,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and the decision to insure. \emph{American Economic Journal: Applied Economics}, 7(2), pp.81-108.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "social_insure"
 
 
@@ -149,7 +149,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Manacorda, M., Miguel, E. and Vigorito, A., 2011. Government transfers and political support. \emph{American Economic Journal: Applied Economics}, 3(3), pp.1-28.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "gov_transfers"
 
 #' Data from "Government Transfers and Political Support" for Density Tests
@@ -164,7 +164,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Manacorda, M., Miguel, E. and Vigorito, A., 2011. Government transfers and political support. \emph{American Economic Journal: Applied Economics}, 3(3), pp.1-28.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "gov_transfers_density"
 
 #' Data from "How do Mortgage Subsidies Affect Home Ownership? Evidence from the Mid-Century GI Bills"
@@ -184,7 +184,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Fetter, D.K., 2013. How do mortgage subsidies affect home ownership? Evidence from the mid-century GI bills. \emph{American Economic Journal: Economic Policy}, 5(2), pp.111-47.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "mortgages"
 
 #' Data from "Black Politicians are More Intrinsically Motivated to Advance Blacks' Interests"
@@ -212,7 +212,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Broockman, D.E., 2013. Black politicians are more intrinsically motivated to advance blacks’ interests: A field experiment manipulating political incentives. \emph{American Journal of Political Science}, 57(3), pp.521-536.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "black_politicians"
 
 
@@ -480,8 +480,8 @@
 #'   \item{count_working}{Number of students who are (a) working, (b) who received federal financial aid, and (c) who began as undergraduates at the institution ten years prior}
 #' }
 #' @encoding UTF-8
-#' @source Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. https://educationdata.urban.org/documentation/, Scorecard.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @source Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. \url{https://educationdata.urban.org/documentation/}, Scorecard.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "scorecard"
 
 #' Data on avocado sales
@@ -498,7 +498,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Kiggins, Justin. 2018. \url{https://www.kaggle.com/neuromusic/avocado-prices/}
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "avocado"
 
 #' Data from a survey of internet-mediated sex workers
@@ -651,7 +651,7 @@
 #' \item{state}{State name}
 #' }
 #' @encoding UTF-8
-#' @source Cunningham and Kang. 2019. “Studying the Effect of Incarceration Shocks to Drug Markets.” Unpublished manuscript. http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf
+#' @source Cunningham and Kang. 2019. “Studying the Effect of Incarceration Shocks to Drug Markets.” Unpublished manuscript. \url{http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf}
 #' @references Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. \url{https://mixtape.scunning.com/index.html}.
 "texas"
 
@@ -671,7 +671,7 @@
 #' @encoding UTF-8
 #' @source Snow, John. 1855. 'On the Mode of Communication of Cholera'. John Churchill."
 #' @source Coleman, Thomas. 2019. 'Causality in the time of cholera: John Snow as a prototype for causal inference.' SSRN 3262234."
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "snow"
 
 #' Data on Taiwanese Credit Card Holders
@@ -689,7 +689,7 @@
 #' }
 #' @encoding UTF-8
 #' @source Lichman, Moshe. 2013. UCI Machine Learning Repository.
-#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 "credit_cards"
 
 #' Data from a fictional randomized heart transplant study
@@ -704,7 +704,7 @@
 #' \item{y}{The outcome, death}
 #' }
 #' @encoding UTF-8
-#' @source Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+#' @source Hernán and Robins. Causal Inference. \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}
 "greek_data"
 
 #' National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
@@ -713,7 +713,7 @@
 #'
 #' @format A data frame with 1629 rows and 67 variables. The codebook is available as \code{nhefs_codebook}.
 #' @source wwwn.cdc.gov/nchs/nhanes/nhefs/
-#' @references Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+#' @references Hernán and Robins. Causal Inference. \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}
 "nhefs"
 
 #' Complete-Data National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
@@ -721,8 +721,8 @@
 #' \code{nhefs_complete} is the same as \code{nhefs}, but only participants with complete data are included. The variables that need to be complete to be included are: \code{qsmk}, \code{sex}, \code{race}, \code{age}, \code{school}, \code{smokeintensity}, \code{smokeyrs}, \code{exercise}, \code{active}, \code{wt71}, \code{wt82}, and \code{wt82_71}.
 #'
 #' @format A data frame with 1556 rows and 67 variables. The codebook is available as \code{nhefs_codebook}.
-#' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
-#' @references Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+#' @source \url{wwwn.cdc.gov/nchs/nhanes/nhefs/}
+#' @references Hernán and Robins. Causal Inference. \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}
 "nhefs_complete"
 
 #' NHEFS Codebook
@@ -735,7 +735,7 @@
 #' \item{description}{The variable description}
 #' }
 #' @encoding UTF-8
-#' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
-#' @references Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+#' @source \url{wwwn.cdc.gov/nchs/nhanes/nhefs/}
+#' @references Hernán and Robins. Causal Inference. \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}
 "nhefs_codebook"
 

@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 0.1.0  27apr2021}{...}
+{* *! version 0.1.1  16may2021}{...}
 {viewerjumpto "Syntax" "causaldata##syntax"}{...}
 {viewerjumpto "Description" "causaldata##description"}{...}
 {viewerjumpto "Author" "did##author"}{...}
@@ -32,7 +32,7 @@
 {cmd:causaldata} provides information about the data sets you have downloaded with the {cmd:causaldata} package.
 
 {pstd}
-Currently, the list of data sets includes the data necessary to run example code in {it: The Effect} by Huntington-Klein and {it: Causal Inference: The Mixtape} by Scott Cunningham.
+Currently, the list of data sets includes the data necessary to run example code in {it: The Effect} by Huntington-Klein, {it: Causal Inference: The Mixtape} by Scott Cunningham, and {it: Causal Inference: What If?} by Hernán and Robins.
  
 {marker author}{...}
 {title:Author}
@@ -44,6 +44,8 @@ nhuntington-klein@seattleu.edu
 {marker references}{...}
 {title:References}
 
-{phang} Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. {browse "http://nickchk.com/causalitybook.html": Link}.
+{phang} Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. {browse "https://mixtape.scunning.com/index.html": Link}.
+{phang} Hernán and Robins. 2020. Causal Inference: What If. Chapman & Hall/CRC. {browse "https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/": Link}.
+{phang} Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. {browse "https://theeffectbook.net": Link}.
 
 

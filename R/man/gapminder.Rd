@@ -31,6 +31,6 @@ The \code{gapminder} data contains data on life expectancy and GDP per capita by
 This data set is the same one found in the \emph{gapminder} package in R as of 2020. This data set is used in the \emph{Fixed Effects} chapter of \emph{The Effect}.
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

@@ -27,6 +27,6 @@ The \code{organ_donation} data contains data from Kessler and Roth (2014) on org
 This data is used in the \emph{Difference-in-Differences} chapter of \emph{The Effect}.
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

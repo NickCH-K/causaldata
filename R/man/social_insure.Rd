@@ -36,6 +36,6 @@ The \code{social_insure} data contains data from Jai, De Janvry, and Saoudlet (2
 This data is used in the \emph{Instrumental Variables} chapter of \emph{The Effect}.
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

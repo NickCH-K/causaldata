@@ -23,7 +23,7 @@ A data frame with 816 rows and 12 variables
 }
 }
 \source{
-Cunningham and Kang. 2019. “Studying the Effect of Incarceration Shocks to Drug Markets.” Unpublished manuscript. http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf
+Cunningham and Kang. 2019. “Studying the Effect of Incarceration Shocks to Drug Markets.” Unpublished manuscript. \url{http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf}
 }
 \usage{
 texas

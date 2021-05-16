@@ -27,6 +27,6 @@ Data from the UCI Machine Learning Repository on Taiwanese credit card holders, 
 This data is used in the \emph{Matching} chapter of \emph{The Effect} by Huntington-Klein.
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}

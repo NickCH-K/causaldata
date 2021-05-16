@@ -15,7 +15,7 @@ A data frame with 20 rows and 4 variables:
 }
 }
 \source{
-Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+Hernán and Robins. Causal Inference. \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}
 }
 \usage{
 greek_data

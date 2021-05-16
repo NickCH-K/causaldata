@@ -26,6 +26,6 @@ This data set includes information on the average price and total amount of avoc
 This data was used in the \emph{Identification} chapter of The Effect by Huntington-Klein
 }
 \references{
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
+Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
 }
 \keyword{datasets}
