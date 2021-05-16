@@ -1,7 +1,7 @@
 *! causaldata v.0.1.1 causaldata package information screen. 27apr2021 by Nick CH-K
 
 prog def causaldata
-	version 12
+	version 14.0
 	syntax, [d(string)]
 	
 	if "`d'" == "" {
