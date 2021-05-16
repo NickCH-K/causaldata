@@ -1,4 +1,4 @@
-*! causaldata v.0.1.0 causaldata package information screen. 27apr2021 by Nick CH-K
+*! causaldata v.0.1.1 causaldata package information screen. 27apr2021 by Nick CH-K
 
 prog def causaldata
 	version 12
@@ -22,8 +22,11 @@ prog def causaldata
 		di as text "google_stock.dta"
 		di as text "gov_transfers.dta"
 		di as text "gov_transfers_density.dta"
+		di as text "greek_data.dta"
 		di as text "mortgages.dta"
 		di as text "Mroz.dta"
+		di as text "nhefs.dta"
+		di as text "nhefs_complete.dta"
 		di as text "nsw_mixtape.dta"
 		di as text "organ_donations.dta"
 		di as text "restaurant_inspections.dta"
@@ -145,6 +148,14 @@ prog def causaldata
 		di ""
 		di as text "The gov_transfers_density data contains data from Manacorda, Miguel, and Vigorito (2011) on government transfer program that was administered based on an income cutoff. As opposed to the gov_transfers data set, this data set only contains income information, but has a wider range of it, for use with density discontinuity tests."
 	}
+	else if inlist("`d'","greek_data","greek_data.dta") {
+		di as error "greek_data.dta"
+		di as text "Source: Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/"
+		di ""
+		di "Used in the Chapter 2 of Causal Inference by Hernán and Robins"
+		di ""
+		di as text "greek_data is a fictional data set from Table 2.2 in Chapter 2 of Causal Inference. From the book: 'Table 2.2 shows the data from our heart transplant randomized study. Besides data on treatment A (1 if the individual received a transplant, 0 otherwise) and outcome Y (1 if the individual died, 0 otherwise), Table 2.2 also contains data on the prognostic factor L (1 if the individual was in critical condition, 0 otherwise), which we measured before treatment was assigned.'"
+	}
 	else if inlist("`d'","mortgages","mortgages.dta") {
 		di as error "mortgages.dta"
 		di as text "Source: Fetter, D.K., 2013. How do mortgage subsidies affect home ownership? Evidence from the mid-century GI bills. American Economic Journal: Economic Policy, 5(2), pp.111-47."
@@ -161,6 +172,22 @@ prog def causaldata
 		di "Used in the Describing Relationships chapter in The Effect by Huntington-Klein"
 		di ""
 		di as text "Observations, from the Panel Study of Income Dynamics (PSID), are married women."
+	}
+	else if inlist("`d'","nhefs","nhefs.dta") {
+		di as error "nhefs.dta"
+		di as text "Source: wwwn.cdc.gov/nchs/nhanes/nhefs/"
+		di ""
+		di "Used in Causal Inference by Hernán and Robins"
+		di ""
+		di as text "nhefs is a cleaned data set of the data used in Causal Inference by Hernán and Robins. nhefs is dataset containing data from the National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study (NHEFS). The NHEFS was jointly initiated by the National Center for Health Statistics and the National Institute on Aging in collaboration with other agencies of the United States Public Health Service. A detailed description of the NHEFS, together with publicly available data sets and documentation, can be found at wwwn.cdc.gov/nchs/nhanes/nhefs/."
+	}
+	else if inlist("`d'","nhefs_complete","nhefs_complete.dta") {
+		di as error "nhefs_complete.dta"
+		di as text "Source: wwwn.cdc.gov/nchs/nhanes/nhefs/"
+		di ""
+		di "Used in Causal Inference by Hernán and Robins"
+		di ""
+		di as text "nhefs_complete is the same as nhefs, but only participants with complete data are included. The variables that need to be complete to be included are: qsmp, sex, race, age, school, smokeintensity, smokeyrs, exercise, active, wt71, wt82, wt82_71."
 	}
 	else if inlist("`d'","nsw_mixtape","nsw_mixtape.dta") {
 		di as error "nsw_mixtape.dta"

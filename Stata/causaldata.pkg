@@ -1,4 +1,4 @@
-v 0.1
+v 0.1.1
 d 'causaldata': Get data for example code in causal inference textbooks
 d 
 d Right now, provides example data for The Effect by Huntington-Klein
@@ -36,3 +36,6 @@ F castle.dta
 F texas.dta
 F snow.dta
 F credit_cards.dta
+F nhefs.dta
+F nhefs_complete.dta
+F greek_data.dta

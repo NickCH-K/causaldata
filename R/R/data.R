@@ -309,13 +309,10 @@
 #'
 #' @format A data frame with 4820 rows and 7 variables
 #' \describe{
-#' \item{villnum}{Village ID}
-#' \item{got}{Got HIV results}
-#' \item{distvct}{Distance in kilometers}
-#' \item{tinc}{Total incentive}
-#' \item{any}{Received any incentive}
-#' \item{age}{Age}
-#' \item{hiv2004}{HIV results}
+#' \item{class}{class (ticket)}
+#' \item{age}{Age (Child vs. Adult)}
+#' \item{sex}{Gender}
+#' \item{survived}{Survived}
 #' }
 #' @encoding UTF-8
 #' @source British Board of Trade (1990), Report on the Loss of the ‘Titanic’ (S.S.). British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.
@@ -613,8 +610,6 @@
 #' \item{blackm_25_44}{\% of black male aged 25-44}
 #' \item{whitem_25_44}{\% of white male aged 25-44}
 #' \item{poverty}{poverty rate}
-#' \item{r20001-r20104}{Region-quarter fixed effects}
-#' \item{trend_1-trend_51}{State linear time trends}
 #' \item{l_homicide}{Logged crime rate}
 #' \item{l_larceny}{Logged crime rate}
 #' \item{l_motor}{Logged crime rate}
@@ -624,8 +619,10 @@
 #' \item{l_lagprisoner}{Lagged log prisoners}
 #' \item{l_exp_subsidy}{Logged subsidy spending}
 #' \item{l_exp_pubwelfare}{Logged public welfare spending}
-#' \item{lead1-lag5}{Indicators of how many time periods until/since treatment}
+#' \item{lead1,lead2,lead3,lead4,lead5,lead6,lead7,lead8,lead9,lag0,lag1,lag2,lag3,lag4,lag5}{Indicators of how many time periods until/since treatment}
 #' \item{popwt}{Population weight}
+#' \item{r20001,r20002,r20003,r20004,r20011,r20012,r20013,r20014,r20021,r20022,r20023,r20024,r20031,r20032,r20033,r20034,r20041,r20042,r20043,r20044,r20051,r20052,r20053,r20054,r20061,r20062,r20063,r20064,r20071,r20072,r20073,r20074,r20081,r20082,r20083,r20084,r20091,r20092,r20093,r20094,r20101,r20102,r20103,r20104}{Region-quarter fixed effects}
+#' \item{trend_1,trend_10,trend_11,trend_12,trend_13,trend_14,trend_15,trend_16,trend_17,trend_18,trend_19,trend_2,trend_20,trend_21,trend_22,trend_23,trend_24,trend_25,trend_26,trend_27,trend_28,trend_29,trend_3,trend_30,trend_31,trend_32,trend_33,trend_34,trend_35,trend_36,trend_37,trend_38,trend_39,trend_4,trend_40,trend_41,trend_42,trend_43,trend_44,trend_45,trend_46,trend_47,trend_48,trend_49,trend_5,trend_50,trend_51,trend_6,trend_7,trend_8,trend_9}{State linear time trends}
 #' }
 #' @encoding UTF-8
 #' @source Cheng, Cheng, and Mark Hoekstra. 2013. “Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Expansions to Castle Doctrine.” Journal of Human Resources 48 (3): 821–54.
@@ -695,59 +692,50 @@
 #' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{http://nickchk.com/causalitybook.html}.
 "credit_cards"
 
-#' Table 2.2 in Causal Inference
+#' Data from a fictional randomized heart transplant study
 #'
-#' `greek_data` is a fictional data set from Chapter 2 of Causal Inference. From
-#' the book: "Table 2.2 shows the data from our heart transplant randomized
-#' study. Besides data on treatment *A* (1 if the individual received a
-#' transplant, 0 otherwise) and outcome *Y* (1 if the individual died, 0
-#' otherwise), Table 2.2 also contains data on the prognostic factor *L* (1 if
-#' the individual was in critical condition, 0 otherwise), which we measured
-#' before treatment was assigned."
+#' \code{greek_data} is a fictional data set from Table 2.2 in Chapter 2 of Causal Inference. From the book: "Table 2.2 shows the data from our heart transplant randomized study. Besides data on treatment A (1 if the individual received a transplant, 0 otherwise) and outcome Y (1 if the individual died, 0 otherwise), Table 2.2 also contains data on the prognostic factor L (1 if the individual was in critical condition, 0 otherwise), which we measured before treatment was assigned."
 #'
-#' @format A data frame with 20 rows and 4 variables: `name`, the name of a
-#'   Greek god, `l`, a prognostic factor, `a`, the treatment, a heart
-#'   transplant, and `y`, the outcome, death.
-#'
-#' @source [Causal Inference](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
+#' @format A data frame with 20 rows and 4 variables:
+#' \describe{
+#' \item{name}{The name of a Greek god}
+#' \item{l}{A prognostic factor}
+#' \item{a}{The treatment, a heart transplant}
+#' \item{y}{The outcome, death}
+#' }
+#' @encoding UTF-8
+#' @source Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
 "greek_data"
 
 #' National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
 #'
-#' `nhefs` is a cleaned data set of the data used in Causal Inference by Hernán
-#' and Robins. `nhefs` is dataset containing data from the National Health and
-#' Nutrition Examination Survey Data I Epidemiologic Follow-up Study (NHEFS).
-#' The NHEFS was jointly initiated by the National Center for Health Statistics
-#' and the National Institute on Aging in collaboration with other agencies of
-#' the United States Public Health Service. A detailed description of the NHEFS,
-#' together with publicly available data sets and documentation, can be found at
-#' [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/).
+#' \code{nhefs} is a cleaned data set of the data used in Causal Inference by Hernán and Robins. \code{nhefs} is dataset containing data from the National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study (NHEFS). The NHEFS was jointly initiated by the National Center for Health Statistics and the National Institute on Aging in collaboration with other agencies of the United States Public Health Service. A detailed description of the NHEFS, together with publicly available data sets and documentation, can be found at wwwn.cdc.gov/nchs/nhanes/nhefs/.
 #'
-#' @format A data frame with 1629 rows and 67 variables. The codebook is available as `nhefs_codebook`.
-#'
-#' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+#' @format A data frame with 1629 rows and 67 variables. The codebook is available as \code{nhefs_codebook}.
+#' @source wwwn.cdc.gov/nchs/nhanes/nhefs/
+#' @references Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
 "nhefs"
 
-#' National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
+#' Complete-Data National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
 #'
-#' `nhefs_complete` is the same as [`nhefs`], but only participants
-#' with complete data are included. The variables that need to be complete to be
-#' included are: `qsmk`, `sex`, `race`, `age`, `school`, `smokeintensity`,
-#' `smokeyrs`, `exercise`, `active`, `wt71`, `wt82`, and `wt82_71`.
+#' \code{nhefs_complete} is the same as \code{nhefs}, but only participants with complete data are included. The variables that need to be complete to be included are: \code{qsmk}, \code{sex}, \code{race}, \code{age}, \code{school}, \code{smokeintensity}, \code{smokeyrs}, \code{exercise}, \code{active}, \code{wt71}, \code{wt82}, and \code{wt82_71}.
 #'
-#' @format A data frame with 1556 rows and 67 variables. The codebook is available as `nhefs_codebook`.
-#'
+#' @format A data frame with 1556 rows and 67 variables. The codebook is available as \code{nhefs_codebook}.
 #' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+#' @references Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
 "nhefs_complete"
 
 #' NHEFS Codebook
 #'
-#' `nhefs_codebook` is the codebook for [`nhefs`] and [`nhefs_complete`].
+#' \code{nhefs_codebook} is the codebook for \code{nhefs} and \code{nhefs_complete}.
 #'
-#' @format A data frame with 64 rows and 2 variables. Each row contains the name
-#'   of a variable (`variable`) in [`nhefs`] and [`nhefs_complete`] and a
-#'   description of what the variable represents (`description`).
-#'
+#' @format A data frame with 64 rows and 2 variables.
+#' \describe{
+#' \item{variable}{The variable being described}
+#' \item{description}{The variable description}
+#' }
+#' @encoding UTF-8
 #' @source [wwwn.cdc.gov/nchs/nhanes/nhefs/](wwwn.cdc.gov/nchs/nhanes/nhefs/)
+#' @references Hernán and Robins. Causal Inference. https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
 "nhefs_codebook"
 

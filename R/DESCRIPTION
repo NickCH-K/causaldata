@@ -1,12 +1,13 @@
 Type: Package
 Package: causaldata
 Title: Example Data Sets for Causal Inference Textbooks
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Nick",
              family = "Huntington-Klein",
              role = c("aut", "cre"),
-             email = "nhuntington-klein@seattleu.edu"),
+             email = "nhuntington-klein@seattleu.edu",
+             comment = c(ORCID = "0000-0002-7352-3991")),
       person(given = "Malcolm",
              family = "Barrett",
              role = "aut",

@@ -8,13 +8,10 @@
 \format{
 A data frame with 4820 rows and 7 variables
 \describe{
-\item{villnum}{Village ID}
-\item{got}{Got HIV results}
-\item{distvct}{Distance in kilometers}
-\item{tinc}{Total incentive}
-\item{any}{Received any incentive}
-\item{age}{Age}
-\item{hiv2004}{HIV results}
+\item{class}{class (ticket)}
+\item{age}{Age (Child vs. Adult)}
+\item{sex}{Gender}
+\item{survived}{Survived}
 }
 }
 \source{

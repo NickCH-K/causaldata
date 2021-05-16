@@ -13,11 +13,11 @@ This package contains example data sets to run the example
     Hernán and James Robins.
 }
 \author{
-\strong{Maintainer}: Nick Huntington-Klein \email{nhuntington-klein@seattleu.edu}
+\strong{Maintainer}: Nick Huntington-Klein \email{nhuntington-klein@seattleu.edu} (\href{https://orcid.org/0000-0002-7352-3991}{ORCID})
 
 Authors:
 \itemize{
-  \item Malcolm Barrett \email{malcolmbarrett@gmail.com}
+  \item Malcolm Barrett \email{malcolmbarrett@gmail.com} (\href{https://orcid.org/0000-0003-0299-5825}{ORCID})
 }
 
 }
