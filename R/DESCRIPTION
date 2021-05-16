@@ -1,12 +1,27 @@
-Package: causaldata
 Type: Package
+Package: causaldata
 Title: Example Data Sets for Causal Inference Textbooks
 Version: 0.1.0
-Authors@R: c(person(given = "Nick", family = "Huntington-Klein", role = c("aut","cre"), email = "nhuntington-klein@seattleu.edu"))
-Description: This package contains example data sets to run the example problems from causal inference textbooks. Currently, contains data sets for The Effect by Nick Huntington-Klein and Causal Inference: The Mixtape by Scott Cunningham.
+Authors@R: 
+    c(person(given = "Nick",
+             family = "Huntington-Klein",
+             role = c("aut", "cre"),
+             email = "nhuntington-klein@seattleu.edu"),
+      person(given = "Malcolm",
+             family = "Barrett",
+             role = "aut",
+             email = "malcolmbarrett@gmail.com",
+             comment = c(ORCID = "0000-0003-0299-5825")))
+Description: This package contains example data sets to run the example
+    problems from causal inference textbooks. Currently, contains data
+    sets for The Effect by Nick Huntington-Klein, Causal Inference: The
+    Mixtape by Scott Cunningham, and Causal Inference: What If? By Miguel
+    Hernán and James Robins.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
 Depends: 
     R (>= 2.10)
+Imports: 
+    tibble
+Encoding: UTF-8
+LazyData: true
 RoxygenNote: 7.1.1
