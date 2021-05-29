@@ -11,6 +11,9 @@ See `help(package = 'causaldata')` for a list of data sets included.
 This package can be installed with:
 
 ```r
+install.packages('causaldata')
+
+# Or for the dev version:
 # If necessary: install.packages('remotes')
 remotes::install_github('NickCH-K/causaldata/R/')
 ```

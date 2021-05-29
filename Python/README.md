@@ -25,6 +25,14 @@ print(causaldata.black_politicians.SOURCE)
 
 To see a list of all included data sets, do `dir(causaldata)`
 
+To install, do 
+
+```python
+pip install causaldata
+```
+
+Or, for the dev version:
+
 At some point I will figure out how to tell you to install this package from GitHub. But for now, [download this package](https://github.com/NickCH-K/causaldata/archive/refs/heads/main.zip), unzip it, change the directory to the `causaldata/Python` folder, and install with:
 
 ```python

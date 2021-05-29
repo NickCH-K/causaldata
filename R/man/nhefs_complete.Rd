@@ -8,7 +8,7 @@
 A data frame with 1556 rows and 67 variables. The codebook is available as \code{nhefs_codebook}.
 }
 \source{
-\url{wwwn.cdc.gov/nchs/nhanes/nhefs/}
+\url{https://wwwn.cdc.gov/nchs/nhanes/nhefs/}
 }
 \usage{
 nhefs_complete

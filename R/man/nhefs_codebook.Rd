@@ -13,7 +13,7 @@ A data frame with 64 rows and 2 variables.
 }
 }
 \source{
-\url{wwwn.cdc.gov/nchs/nhanes/nhefs/}
+\url{https://wwwn.cdc.gov/nchs/nhanes/nhefs/}
 }
 \usage{
 nhefs_codebook

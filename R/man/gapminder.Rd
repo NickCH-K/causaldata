@@ -17,7 +17,7 @@ A data frame with 1704 rows and 6 variables
 }
 }
 \source{
-\url{http://www.gapminder.org/data/}
+\url{https://www.gapminder.org/data/}
 
 Jennifer Bryan (2017). gapminder: Data from Gapminder. R package version 0.3.0. \url{https://CRAN.R-project.org/package=gapminder}
 }
