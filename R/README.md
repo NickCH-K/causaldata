@@ -1,3 +1,11 @@
+[![](http://cranlogs.r-pkg.org/badges/grand-total/causaldata?color=orange)](https://cran.r-project.org/package=causaldata)
+[![](http://cranlogs.r-pkg.org/badges/last-month/causaldata?color=green)](https://cran.r-project.org/package=causaldata)
+[![](https://www.r-pkg.org/badges/version/causaldata?color=blue)](https://cran.r-project.org/package=causaldata)
+[![CRAN
+checks](https://cranchecks.info/badges/summary/causaldata)](https://cran.r-project.org/web/checks/check_results_causaldata.html)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/causaldata)](https://CRAN.R-project.org/package=causaldata)
+
 # causaldata
 
 This R package contains data sets that can be used to implement the code examples in causal inference textbooks.
