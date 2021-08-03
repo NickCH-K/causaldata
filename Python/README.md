@@ -1,3 +1,5 @@
+[![](https://img.shields.io/pypi/dm/causaldata.svg)](https://pypi.org/project/causaldata)
+
 # causaldata
 
 This Python package contains data sets that can be used to implement the code examples in causal inference textbooks.
