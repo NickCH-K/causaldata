@@ -554,12 +554,13 @@
 #'
 #' This data is used in the \emph{Difference-in-Differences} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
 #'
-#' @format A data frame with 19584 rows and 21 variables
+#' @format A data frame with 19584 rows and 22 variables
 #' \describe{
 #' \item{fip}{State FIPS code}
 #' \item{age}{Age in years}
 #' \item{race}{Race - 1 = white, 2 = black}
 #' \item{year}{Year}
+#' \item{t}{Year but counted on a different scale}
 #' \item{sex}{Sex: 1 = male, 2 = female}
 #' \item{totpop}{Total population}
 #' \item{ir}{Incarcerated Males per 100,000}
@@ -590,9 +591,10 @@
 #'
 #' This data is used in the \emph{Difference-in-Differences} chapter of \emph{Causal Inference: The Mixtape} by Cunningham.
 #'
-#' @format A data frame with 19584 rows and 21 variables
+#' @format A data frame with 19584 rows and 22 variables
 #' \describe{
 #' \item{year}{Year}
+#' \item{post}{After-treatment}
 #' \item{sid}{state id}
 #' \item{robbery_gun_r}{Region-quarter fixed effects}
 #' \item{jhcitizen_c}{justifiable homicide by private citizen count}

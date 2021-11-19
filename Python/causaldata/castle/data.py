@@ -18,9 +18,10 @@ DESCRLONG = """This data looks at the impact of castle-doctrine statutes on viol
 
 NOTE = """::
     Number of observations - 550
-    Number of variables - 138
+    Number of variables - 139
     Variables name definitions::
             year - Year
+            post - Post-treatment indicator
             sid - state id
             robbery_gun_r - Region-quarter fixed effects
             jhcitizen_c - justifiable homicide by private citizen count
