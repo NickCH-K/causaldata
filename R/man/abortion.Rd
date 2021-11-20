@@ -6,12 +6,13 @@
 \alias{abortion}
 \title{Data on abortion legalization and sexually transmitted infections}
 \format{
-A data frame with 19584 rows and 21 variables
+A data frame with 19584 rows and 22 variables
 \describe{
 \item{fip}{State FIPS code}
 \item{age}{Age in years}
 \item{race}{Race - 1 = white, 2 = black}
 \item{year}{Year}
+\item{t}{Year but counted on a different scale}
 \item{sex}{Sex: 1 = male, 2 = female}
 \item{totpop}{Total population}
 \item{ir}{Incarcerated Males per 100,000}

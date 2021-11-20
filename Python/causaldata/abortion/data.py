@@ -18,12 +18,13 @@ DESCRLONG = """This data looks at the effect of abortion legalization on the inc
 
 NOTE = """::
     Number of observations - 19584
-    Number of variables - 21
+    Number of variables - 22
     Variables name definitions::
             fip - State FIPS code
             age - Age in years
             race - Race: 1 = white, 2 = black
             year - Year
+            t - Year but on a different scale
             sex - Sex: 1 = male, 2 = female
             totpop - Total population
             ir - Incarcerated Males per 100,000

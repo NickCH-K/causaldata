@@ -6,12 +6,15 @@
 \alias{causaldata-package}
 \title{causaldata: Example Data Sets for Causal Inference Textbooks}
 \description{
-Example data sets to run the example
-    problems from causal inference textbooks. Currently, contains data
-    sets for Huntington-Klein, Nick (2021) "The Effect" <https://theeffectbook.net>,
-    Cunningham, Scott (2021, ISBN-13: 978-0-300-25168-5) "Causal Inference: The Mixtape", 
-    and Hernán, Miguel and James Robins (2020) "Causal Inference: What If" 
-    <https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/>.
+Example data sets to run the example problems from causal inference textbooks. Currently, contains data sets for Huntington-Klein, Nick (2021) "The Effect" <https://theeffectbook.net>, Cunningham, Scott (2021, ISBN-13: 978-0-300-25168-5) "Causal Inference: The Mixtape", and Hernán, Miguel and James Robins (2020) "Causal Inference: What If" <https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/>.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/NickCH-K/causaldata}
+  \item Report bugs at \url{https://github.com/NickCH-K/causaldata/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Nick Huntington-Klein \email{nhuntington-klein@seattleu.edu} (\href{https://orcid.org/0000-0002-7352-3991}{ORCID})

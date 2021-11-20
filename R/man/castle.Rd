@@ -6,9 +6,10 @@
 \alias{castle}
 \title{Data on castle-doctrine statutes and violent crime}
 \format{
-A data frame with 19584 rows and 21 variables
+A data frame with 19584 rows and 22 variables
 \describe{
 \item{year}{Year}
+\item{post}{After-treatment}
 \item{sid}{state id}
 \item{robbery_gun_r}{Region-quarter fixed effects}
 \item{jhcitizen_c}{justifiable homicide by private citizen count}
