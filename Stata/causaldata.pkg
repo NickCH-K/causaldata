@@ -1,9 +1,9 @@
-v 0.1.3
+v 0.1.4
 d 'causaldata': Get data for example code in causal inference textbooks
 d 
 d Right now, provides example data for The Effect by Huntington-Klein
 d 
-d Distribution-Date:   20211119
+d Distribution-Date:   20220221
 d License: MIT
 d 
 F causaldata.ado
