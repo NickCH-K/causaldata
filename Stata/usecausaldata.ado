@@ -1,4 +1,4 @@
-*! causaldata v.0.1.4 causaldata package information screen. 21feb2022 by Nick CH-K
+*! causaldata v.0.1.5 causaldata package information screen. 25feb2022 by Nick CH-K
 prog def usecausaldata
 	version 14.0
 	syntax anything, [clear download wd]
@@ -64,9 +64,27 @@ prog def usecausaldata
 			local dest = "`cfile'`firstchar'/`fl'"
 			di "`dest'"
 			capture mkdir "`cfile'`firstchar'"
-			capture copy "`fl'" "`dest'", replace
 			
+			* Different ways it may have been downloaded
+			local errorcopy = 1
+			capture copy "causaldata/Stata/`fl'" "`dest'", replace
 			if _rc == 0 {
+				local errorcopy = 0
+			}
+			capture copy "causaldata/`fl'" "`dest'", replace
+			if _rc == 0 {
+				local errorcopy = 0
+			}
+			capture copy "Stata/`fl'" "`dest'", replace
+			if _rc == 0 {
+				local errorcopy = 0
+			}
+			capture copy "`fl'" "`dest'", replace
+			if _rc == 0 {
+				local errorcopy = 0
+			}
+			
+			if `errorcopy' == 0 {
 				capture erase "`fl'"
 			} 
 			else {
