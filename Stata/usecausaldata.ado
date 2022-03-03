@@ -1,4 +1,4 @@
-*! causaldata v.0.1.5 causaldata package information screen. 25feb2022 by Nick CH-K
+*! causaldata v.0.1.6 causaldata package information screen. 25feb2022 by Nick CH-K
 prog def usecausaldata
 	version 14.0
 	syntax anything, [clear download wd]
@@ -86,6 +86,9 @@ prog def usecausaldata
 			
 			if `errorcopy' == 0 {
 				capture erase "`fl'"
+				capture erase "Stata/`fl'"
+				capture erase "causaldata/`fl'"
+				capture erase "causaldata/Stata/`fl'"
 			} 
 			else {
 				display as error "Failed to move `fl' to ado folder. It has been left in the working directory."
@@ -105,14 +108,14 @@ prog def usecausaldata
 	capture findfile "`f'"
 	if _rc == 0 {
 		local d = r(fn)
-		use `d', `clear'
+		use "`d'", `clear'
 		exit
 	}		
 	* Next, try to open from working directory
 	capture findfile "`f'", path(".")
 	if _rc == 0 {
 		local d = r(fn)
-		use `d', `clear'
+		use "`d'", `clear'
 		exit
 	}
 	
