@@ -6,7 +6,7 @@
 \alias{causaldata-package}
 \title{causaldata: Example Data Sets for Causal Inference Textbooks}
 \description{
-Example data sets to run the example problems from causal inference textbooks. Currently, contains data sets for Huntington-Klein, Nick (2021) "The Effect" <https://theeffectbook.net>, Cunningham, Scott (2021, ISBN-13: 978-0-300-25168-5) "Causal Inference: The Mixtape", and Hernán, Miguel and James Robins (2020) "Causal Inference: What If" <https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/>.
+Example data sets to run the example problems from causal inference textbooks. Currently, contains data sets for Huntington-Klein, Nick (2021) "The Effect" \url{https://theeffectbook.net}, first and second edition, Cunningham, Scott (2021, ISBN-13: 978-0-300-25168-5) "Causal Inference: The Mixtape", and Hernán, Miguel and James Robins (2020) "Causal Inference: What If" \url{https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/}.
 }
 \seealso{
 Useful links:

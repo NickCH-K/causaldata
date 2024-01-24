@@ -45,6 +45,29 @@
 "restaurant_inspections"
 
 
+#' Data on Drug Arrests from the Crown Court Sentencing Survey
+#'
+#' The \code{ccdrug} data contains data on drug arrests from the Crown Court Sentencing Survey between 2012 and 2015 in England and Wales, allowing for a look at differential sentencing rates for men and women, with a set of controls for features that should impact sentencing.
+#'
+#' This data set is used in the \emph{Partial Identification} chapter of \emph{The Effect}.
+#'
+#' @format A data frame with 16973 rows and 45 variables
+#' \describe{
+#'   \item{custody}{Taken in to custody.}
+#'   \item{male}{Is a male}
+#'   \item{first_offense}{This is the first offense}
+#'   \item{age}{Age in ten-year bins}
+#'   \item{offense}{Offense type}
+#'   \item{prev_convictions}{Previous convictions, in bins of None, 1-3, 4-9, or 10+}
+#'   \item{drg_class}{Type of drug}
+#'   \item{drg_culpability}{Level of culpability for crime}
+#'   \item{drg_increasing_x, drg_reducing_x}{A set of indicators that should increase or reduce the likelihood of being taken into custody. See variable labels for specific definitions.}
+#' }
+#' @encoding UTF-8
+#' @source Pina Sanchez, J., & Harris, L., 2020. Sentencing gender? Investigating the presence of gender disparities in Crown Court sentences. \emph{Criminal Law Review}, 2020(1), pp. 3-28.
+#' @references Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. \url{https://theeffectbook.net}.
+"ccdrug"
+
 #' Gapminder data
 #'
 #' The \code{gapminder} data contains data on life expectancy and GDP per capita by country and year.

@@ -1,11 +1,11 @@
-*! causaldata v.0.1.6 causaldata package information screen. 02mar2022 by Nick CH-K
+*! causaldata v.0.1.7 causaldata package information screen. 02mar2022 by Nick CH-K
 prog def causaldata
 	version 14.0
 	syntax [anything], [use clear download wd erase]
 	
 	* Erase files from adopath
 	if "`erase'" == "erase" {
-		foreach f in "abortion.dta" "adult_services.dta" "avocado.dta" "black_politicians.dta" "castle.dta" "close_college.dta" "close_elections_lmb.dta" "cps_mixtape.dta" "credit_cards.dta" "gapminder.dta" "google_stock.dta" "gov_transfers.dta" "gov_transfers_density.dta" "greek_data.dta" "mortgages.dta" "Mroz.dta" "nhefs.dta" "nhefs_complete.dta" "nsw_mixtape.dta" "organ_donations.dta" "restaurant_inspections.dta" "ri.dta" "scorecard.dta" "snow.dta" "social_insure.dta" "texas.dta" "thornton_hiv.dta" "titanic.dta" "training_bias_reduction.dta" "training_example.dta" "yule.dta" {
+		foreach f in "abortion.dta" "adult_services.dta" "avocado.dta" "black_politicians.dta" "castle.dta" "ccdrug.dta" "close_college.dta" "close_elections_lmb.dta" "cps_mixtape.dta" "credit_cards.dta" "gapminder.dta" "google_stock.dta" "gov_transfers.dta" "gov_transfers_density.dta" "greek_data.dta" "mortgages.dta" "Mroz.dta" "nhefs.dta" "nhefs_complete.dta" "nsw_mixtape.dta" "organ_donations.dta" "restaurant_inspections.dta" "ri.dta" "scorecard.dta" "snow.dta" "social_insure.dta" "texas.dta" "thornton_hiv.dta" "titanic.dta" "training_bias_reduction.dta" "training_example.dta" "yule.dta" {
 			capture findfile `f'
 			if _rc == 0 {
 				local fname = r(fn)
@@ -17,7 +17,7 @@ prog def causaldata
 	
 	* Search everything
 	if "`anything'" == "*" {
-		local anything = "abortion.dta adult_services.dta avocado.dta black_politicians.dta castle.dta close_college.dta close_elections_lmb.dta close_college.dta cps_mixtape.dta credit_cards.dta gapminder.dta google_stock.dta gov_transfers.dta gov_transfers_density.dta greek_data.dta mortgages.dta Mroz.dta nhefs.dta nhefs_complete.dta nsw_mixtape.dta organ_donations.dta restaurant_inspections.dta ri.dta scorecard.dta snow.dta social_insure.dta texas.dta thornton_hiv.dta titanic.dta training_bias_reduction.dta training_example.dta yule.dta"
+		local anything = "abortion.dta adult_services.dta avocado.dta black_politicians.dta castle.dta ccdrug.dta close_college.dta close_elections_lmb.dta close_college.dta cps_mixtape.dta credit_cards.dta gapminder.dta google_stock.dta gov_transfers.dta gov_transfers_density.dta greek_data.dta mortgages.dta Mroz.dta nhefs.dta nhefs_complete.dta nsw_mixtape.dta organ_donations.dta restaurant_inspections.dta ri.dta scorecard.dta snow.dta social_insure.dta texas.dta thornton_hiv.dta titanic.dta training_bias_reduction.dta training_example.dta yule.dta"
 	}
 	
 	* Option combinations
@@ -43,6 +43,7 @@ prog def causaldata
 		di as text "{stata causaldata avocado.dta}: The Effect, Identification"
 		di as text "{stata causaldata black_politicians.dta}: The Effect, Matching"
 		di as text "{stata causaldata castle.dta}: The Mixtape, Difference-in-Differences"
+		di as text "{stata causaldata ccdrug.dta}: The Effect, Partial Identification"
 		di as text "{stata causaldata close_college.dta}: The Mixtape, Instrumental Variables"
 		di as text "{stata causaldata close_elections_lmb.dta}: The Mixtape, Regression Discontinuity"
 		di as text "{stata causaldata cps_mixtape.dta}: The Mixtape, Matching and Subclassification"
@@ -120,6 +121,14 @@ prog def causaldata
 			di "Used in the Difference-in-Differences chapter in Causal Inference: the Mixtape by Cunningham."
 			di ""
 			di as text "This data looks at the impact of castle-doctrine statutes on violent crime. Data from the FBI Uniform Crime Reports Summary files are combined with information on castle-doctrine/stand-your-ground law impementation in different states."
+		}
+		else if inlist("`d'","ccdrug","ccdrug.dta") {
+			di as error "{stata causaldata ccdrug.dta, use clear}"
+			di as text "Source: Pina Sanchez, J., & Harris, L., 2020. “Sentencing gender? Investigating the presence of gender disparities in Crown Court sentences.” Criminal Law Review 2020 (1): 3-28."
+			di ""
+			di "Used in the Partial Identification chapter in The Effect by Huntington-Klein."
+			di ""
+			di as text "This data set contains data on drug arrests in England and Wales from 2012 through 2015."
 		}
 		else if inlist("`d'","close_elections_lmb","close_elections_lmb.dta") {
 			di as error "{stata causaldata close_elections_lmb.dta, use clear}"

@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 0.1.6  02mar2022}{...}
+{* *! version 0.1.7  23jan2024}{...}
 {viewerjumpto "Syntax" "causaldata##syntax"}{...}
 {viewerjumpto "Description" "causaldata##description"}{...}
 {viewerjumpto "Author" "causaldata##author"}{...}
@@ -38,7 +38,7 @@
 {p_end}
 
 {pstd}
-Currently, the list of data sets includes the data necessary to run example code in {it: The Effect} by Huntington-Klein, {it: Causal Inference: The Mixtape} by Scott Cunningham, and {it: Causal Inference: What If} by Hernán and Robins.
+Currently, the list of data sets includes the data necessary to run example code in {it: The Effect} by Huntington-Klein, first and second edition, {it: Causal Inference: The Mixtape} by Scott Cunningham, and {it: Causal Inference: What If} by Hernán and Robins.
 {p_end}
 
 {pstd}

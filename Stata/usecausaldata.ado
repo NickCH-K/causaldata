@@ -1,4 +1,4 @@
-*! causaldata v.0.1.6 causaldata package information screen. 25feb2022 by Nick CH-K
+*! causaldata v.0.1.7 causaldata package information screen. 23jan2024 by Nick CH-K
 prog def usecausaldata
 	version 14.0
 	syntax anything, [clear download wd]
@@ -36,7 +36,7 @@ prog def usecausaldata
 		else {
 			di as error "They will be stored in your working directory."
 		}
-		di as error "This will use approximately 13.5MB of disk space."
+		di as error "This will use approximately 15.9MB of disk space."
 		di as error "Press Y or Yes to continue, or anything else to quit."
 		display _request(start)
 		
@@ -59,7 +59,7 @@ prog def usecausaldata
 	quietly unzipfile causaldata.zip, replace
 	
 	if "`wd'" == "" {
-		foreach fl in "abortion.dta" "adult_services.dta" "avocado.dta" "black_politicians.dta" "castle.dta" "close_college.dta" "close_elections_lmb.dta" "cps_mixtape.dta" "credit_cards.dta" "gapminder.dta" "google_stock.dta" "gov_transfers.dta" "gov_transfers_density.dta" "greek_data.dta" "mortgages.dta" "Mroz.dta" "nhefs.dta" "nhefs_complete.dta" "nsw_mixtape.dta" "organ_donations.dta" "restaurant_inspections.dta" "ri.dta" "scorecard.dta" "snow.dta" "social_insure.dta" "texas.dta" "thornton_hiv.dta" "titanic.dta" "training_bias_reduction.dta" "training_example.dta" "yule.dta" {
+		foreach fl in "abortion.dta" "adult_services.dta" "avocado.dta" "black_politicians.dta" "castle.dta" "ccdrug.dta" "close_college.dta" "close_elections_lmb.dta" "cps_mixtape.dta" "credit_cards.dta" "gapminder.dta" "google_stock.dta" "gov_transfers.dta" "gov_transfers_density.dta" "greek_data.dta" "mortgages.dta" "Mroz.dta" "nhefs.dta" "nhefs_complete.dta" "nsw_mixtape.dta" "organ_donations.dta" "restaurant_inspections.dta" "ri.dta" "scorecard.dta" "snow.dta" "social_insure.dta" "texas.dta" "thornton_hiv.dta" "titanic.dta" "training_bias_reduction.dta" "training_example.dta" "yule.dta" {
 			local firstchar = substr("`fl'",1,1)
 			local dest = "`cfile'`firstchar'/`fl'"
 			di "`dest'"

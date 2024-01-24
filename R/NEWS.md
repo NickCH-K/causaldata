@@ -3,3 +3,7 @@
 * Added a `NEWS.md` file to track changes to the package.
 * Added some necessary missing variables to `abortion` and `castle`
 * Removed `haven_labelled` values on Mixtape data 
+
+# causaldata 0.1.4
+
+* Added ccdrug data.
