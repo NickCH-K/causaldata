@@ -1,4 +1,4 @@
-*! causaldata v.0.1.7 causaldata package information screen. 02mar2022 by Nick CH-K
+*! causaldata v.0.1.7 causaldata package information screen. 25oct2024 by Nick CH-K
 prog def causaldata
 	version 14.0
 	syntax [anything], [use clear download wd erase]
