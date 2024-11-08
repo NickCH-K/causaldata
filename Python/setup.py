@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.4' 
+VERSION = '0.1.5' 
 DESCRIPTION = 'Example Data Sets for Causal Inference'
 LONG_DESCRIPTION = 'Example data sets for running code examples from causal inference textbooks. For now this includes data sets from The Effect by Huntington-Klein and Causal Inference: The Mixtape by Cunningham.'
 
